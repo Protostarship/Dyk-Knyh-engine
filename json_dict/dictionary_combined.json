@@ -1,0 +1,1714 @@
+{
+  "apa": {
+    "indigenous": "inu",
+    "pos": "noun"
+  },
+  "kemana": {
+    "indigenous": "kenpi",
+    "pos": "noun"
+  },
+  "dimana": {
+    "indigenous": "kenpi",
+    "pos": "noun"
+  },
+  "siapa": {
+    "indigenous": "ahe",
+    "pos": "noun"
+  },
+  "kapan": {
+    "indigenous": "mi'an",
+    "pos": "noun"
+  },
+  "bagaimana": {
+    "indigenous": "kumpin",
+    "pos": "noun"
+  },
+  "putih": {
+    "indigenous": "putek",
+    "pos": "noun"
+  },
+  "hitam": {
+    "indigenous": "saleng",
+    "pos": "noun"
+  },
+  "merah": {
+    "indigenous": "bala",
+    "pos": "noun"
+  },
+  "1": {
+    "indigenous": "cha",
+    "pos": "noun"
+  },
+  "2": {
+    "indigenous": "dua",
+    "pos": "noun"
+  },
+  "3": {
+    "indigenous": "telu",
+    "pos": "noun"
+  },
+  "4": {
+    "indigenous": "pat",
+    "pos": "noun"
+  },
+  "5": {
+    "indigenous": "lema",
+    "pos": "noun"
+  },
+  "6": {
+    "indigenous": "jam",
+    "pos": "noun"
+  },
+  "7": {
+    "indigenous": "tujo",
+    "pos": "noun"
+  },
+  "8": {
+    "indigenous": "aya",
+    "pos": "noun"
+  },
+  "9": {
+    "indigenous": "pi'en",
+    "pos": "noun"
+  },
+  "10": {
+    "indigenous": "polok",
+    "pos": "noun"
+  },
+  "satu": {
+    "indigenous": "ca",
+    "pos": "noun"
+  },
+  "dua": {
+    "indigenous": "dua",
+    "pos": "noun"
+  },
+  "tiga": {
+    "indigenous": "telu",
+    "pos": "noun"
+  },
+  "empat": {
+    "indigenous": "pat",
+    "pos": "noun"
+  },
+  "lima": {
+    "indigenous": "lema",
+    "pos": "noun"
+  },
+  "enam": {
+    "indigenous": "nem",
+    "pos": "noun"
+  },
+  "tujuh": {
+    "indigenous": "tujuk",
+    "pos": "noun"
+  },
+  "delapan": {
+    "indigenous": "aya",
+    "pos": "noun"
+  },
+  "sembilan": {
+    "indigenous": "pe'en",
+    "pos": "noun"
+  },
+  "sepuluh": {
+    "indigenous": "puluk",
+    "pos": "noun"
+  },
+  "seratus": {
+    "indigenous": "ca ato",
+    "pos": "noun"
+  },
+  "seribu": {
+    "indigenous": "ca ibu",
+    "pos": "noun"
+  },
+  "sejuta": {
+    "indigenous": "ca juta",
+    "pos": "noun"
+  },
+  "ratus": {
+    "indigenous": "ato",
+    "pos": "noun"
+  },
+  "ribu": {
+    "indigenous": "ibu",
+    "pos": "noun"
+  },
+  "nya": {
+    "indigenous": "la",
+    "pos": "noun"
+  },
+  "aku": {
+    "indigenous": "ake",
+    "pos": "noun"
+  },
+  "ada": {
+    "indigenous": "aun",
+    "pos": "noun"
+  },
+  "anjing": {
+    "indigenous": "udut",
+    "pos": "noun"
+  },
+  "ayam": {
+    "indigenous": "yap",
+    "pos": "noun"
+  },
+  "babi": {
+    "indigenous": "babui",
+    "pos": "noun"
+  },
+  "banteng": {
+    "indigenous": "kalasiau",
+    "pos": "noun"
+  },
+  "bebek": {
+    "indigenous": "bidik",
+    "pos": "noun"
+  },
+  "belalang": {
+    "indigenous": "kade",
+    "pos": "noun"
+  },
+  "beruang": {
+    "indigenous": "buang",
+    "pos": "noun"
+  },
+  "biawak": {
+    "indigenous": "kabuk",
+    "pos": "noun"
+  },
+  "buaya": {
+    "indigenous": "baya",
+    "pos": "noun"
+  },
+  "burung": {
+    "indigenous": "sui",
+    "pos": "noun"
+  },
+  "cicak": {
+    "indigenous": "aru",
+    "pos": "noun"
+  },
+  "gajah": {
+    "indigenous": "kesun",
+    "pos": "noun"
+  },
+  "harimau": {
+    "indigenous": "lenjau",
+    "pos": "noun"
+  },
+  "ikan": {
+    "indigenous": "atuk",
+    "pos": "noun"
+  },
+  "lele": {
+    "indigenous": "kati",
+    "pos": "noun"
+  },
+  "patin": {
+    "indigenous": "selareng",
+    "pos": "noun"
+  },
+  "kambing": {
+    "indigenous": "kadeng",
+    "pos": "noun"
+  },
+  "kancil": {
+    "indigenous": "pelanuk",
+    "pos": "noun"
+  },
+  "kecoa": {
+    "indigenous": "lepa",
+    "pos": "noun"
+  },
+  "kepiting": {
+    "indigenous": "yu",
+    "pos": "noun"
+  },
+  "kijang": {
+    "indigenous": "payak",
+    "pos": "noun"
+  },
+  "kodok": {
+    "indigenous": "sui",
+    "pos": "noun"
+  },
+  "kucing": {
+    "indigenous": "sing",
+    "pos": "noun"
+  },
+  "kupu-kupu": {
+    "indigenous": "bamper",
+    "pos": "noun"
+  },
+  "lalat": {
+    "indigenous": "langau",
+    "pos": "noun"
+  },
+  "cacing": {
+    "indigenous": "lati",
+    "pos": "noun"
+  },
+  "macan": {
+    "indigenous": "kule",
+    "pos": "noun"
+  },
+  "monyet": {
+    "indigenous": "kuyata",
+    "pos": "noun"
+  },
+  "nyamuk": {
+    "indigenous": "jamok",
+    "pos": "noun"
+  },
+  "rusa": {
+    "indigenous": "uca",
+    "pos": "noun"
+  },
+  "siput": {
+    "indigenous": "sik/ulung",
+    "pos": "noun"
+  },
+  "tikus": {
+    "indigenous": "belabau",
+    "pos": "noun"
+  },
+  "ular": {
+    "indigenous": "tuduk",
+    "pos": "noun"
+  },
+  "bagus": {
+    "indigenous": "tia",
+    "pos": "noun"
+  },
+  "baru": {
+    "indigenous": "mading",
+    "pos": "noun"
+  },
+  "besar": {
+    "indigenous": "bio",
+    "pos": "noun"
+  },
+  "cepat": {
+    "indigenous": "sangit",
+    "pos": "noun"
+  },
+  "kelakuan": {
+    "indigenous": "puyan",
+    "pos": "noun"
+  },
+  "kosong": {
+    "indigenous": "mpi un",
+    "pos": "noun"
+  },
+  "malas": {
+    "indigenous": "malat",
+    "pos": "noun"
+  },
+  "nyata": {
+    "indigenous": "lan",
+    "pos": "noun"
+  },
+  "pelit": {
+    "indigenous": "ma'em",
+    "pos": "noun"
+  },
+  "ringan": {
+    "indigenous": "nyian",
+    "pos": "noun"
+  },
+  "sehat": {
+    "indigenous": "agat",
+    "pos": "noun"
+  },
+  "pagi": {
+    "indigenous": "tading nempam",
+    "pos": "noun"
+  },
+  "siang": {
+    "indigenous": "naktau",
+    "pos": "noun"
+  },
+  "malam": {
+    "indigenous": "nataup",
+    "pos": "noun"
+  },
+  "sibuk": {
+    "indigenous": "lamak",
+    "pos": "noun"
+  },
+  "berbagai": {
+    "indigenous": "kado",
+    "pos": "noun"
+  },
+  "atau": {
+    "indigenous": "ataw",
+    "pos": "noun"
+  },
+  "dan": {
+    "indigenous": "ngan",
+    "pos": "noun"
+  },
+  "dari": {
+    "indigenous": "cen",
+    "pos": "noun"
+  },
+  "berasal": {
+    "indigenous": "cen",
+    "pos": "noun"
+  },
+  "diantara": {
+    "indigenous": "dalau",
+    "pos": "noun"
+  },
+  "juga": {
+    "indigenous": "pe",
+    "pos": "noun"
+  },
+  "karena": {
+    "indigenous": "uban",
+    "pos": "noun"
+  },
+  "ke": {
+    "indigenous": "koq",
+    "pos": "noun"
+  },
+  "mending": {
+    "indigenous": "lepa ini",
+    "pos": "noun"
+  },
+  "saat": {
+    "indigenous": "sa taup",
+    "pos": "noun"
+  },
+  "sebelum": {
+    "indigenous": "ken'a",
+    "pos": "noun"
+  },
+  "tapi": {
+    "indigenous": "untepu'o",
+    "pos": "noun"
+  },
+  "tetapi": {
+    "indigenous": "untepu'o",
+    "pos": "noun"
+  },
+  "setelah": {
+    "indigenous": "lepa kadi",
+    "pos": "noun"
+  },
+  "supaya": {
+    "indigenous": "apan",
+    "pos": "noun"
+  },
+  "agar": {
+    "indigenous": "apan",
+    "pos": "noun"
+  },
+  "untuk": {
+    "indigenous": "un",
+    "pos": "noun"
+  },
+  "yang": {
+    "indigenous": "yak",
+    "pos": "noun"
+  },
+  "adalah": {
+    "indigenous": "ja ne",
+    "pos": "noun"
+  },
+  "ialah": {
+    "indigenous": "ialah",
+    "pos": "noun"
+  },
+  "kalau": {
+    "indigenous": "awa'",
+    "pos": "noun"
+  },
+  "badan": {
+    "indigenous": "usa",
+    "pos": "noun"
+  },
+  "baju": {
+    "indigenous": "sapai",
+    "pos": "noun"
+  },
+  "buah": {
+    "indigenous": "buaq",
+    "pos": "noun"
+  },
+  "keledang": {
+    "indigenous": "ta'ep",
+    "pos": "noun"
+  },
+  "cempedak": {
+    "indigenous": "nakan",
+    "pos": "noun"
+  },
+  "lay": {
+    "indigenous": "pakit",
+    "pos": "noun"
+  },
+  "rambutan": {
+    "indigenous": "sangit",
+    "pos": "noun"
+  },
+  "desa": {
+    "indigenous": "lepo",
+    "pos": "noun"
+  },
+  "gula": {
+    "indigenous": "gula'k",
+    "pos": "noun"
+  },
+  "jendela": {
+    "indigenous": "sekan",
+    "pos": "noun"
+  },
+  "kamar": {
+    "indigenous": "tilung lundo",
+    "pos": "noun"
+  },
+  "kursi": {
+    "indigenous": "adan",
+    "pos": "noun"
+  },
+  "lemari": {
+    "indigenous": "buan",
+    "pos": "noun"
+  },
+  "lontong": {
+    "indigenous": "kanen lema'k",
+    "pos": "noun"
+  },
+  "makanan": {
+    "indigenous": "penguman",
+    "pos": "noun"
+  },
+  "memakan": {
+    "indigenous": "uman",
+    "pos": "noun"
+  },
+  "dimakan": {
+    "indigenous": "uman",
+    "pos": "noun"
+  },
+  "meja": {
+    "indigenous": "mejak",
+    "pos": "noun"
+  },
+  "minuman": {
+    "indigenous": "nisep ia",
+    "pos": "noun"
+  },
+  "minyak": {
+    "indigenous": "lenya",
+    "pos": "noun"
+  },
+  "mobil": {
+    "indigenous": "oto",
+    "pos": "noun"
+  },
+  "goreng": {
+    "indigenous": "saga",
+    "pos": "noun"
+  },
+  "pasar": {
+    "indigenous": "pasen",
+    "pos": "noun"
+  },
+  "piring": {
+    "indigenous": "kiyat",
+    "pos": "noun"
+  },
+  "pondok": {
+    "indigenous": "lepau",
+    "pos": "noun"
+  },
+  "rumah": {
+    "indigenous": "amin",
+    "pos": "noun"
+  },
+  "sungai": {
+    "indigenous": "alo",
+    "pos": "noun"
+  },
+  "tas": {
+    "indigenous": "bek",
+    "pos": "noun"
+  },
+  "telur": {
+    "indigenous": "telo",
+    "pos": "noun"
+  },
+  "kandang": {
+    "indigenous": "liwang",
+    "pos": "noun"
+  },
+  "sudah": {
+    "indigenous": "lepa",
+    "pos": "noun"
+  },
+  "sampai": {
+    "indigenous": "pa",
+    "pos": "noun"
+  },
+  "balik": {
+    "indigenous": "liwer",
+    "pos": "noun"
+  },
+  "bangun": {
+    "indigenous": "taga",
+    "pos": "noun"
+  },
+  "belajar": {
+    "indigenous": "pekalai",
+    "pos": "noun"
+  },
+  "berangkat": {
+    "indigenous": "tai te",
+    "pos": "noun"
+  },
+  "bermain": {
+    "indigenous": "piat",
+    "pos": "noun"
+  },
+  "berpikir": {
+    "indigenous": "pekimet",
+    "pos": "noun"
+  },
+  "bikin": {
+    "indigenous": "uyan",
+    "pos": "noun"
+  },
+  "buat": {
+    "indigenous": "uyan",
+    "pos": "noun"
+  },
+  "bilang": {
+    "indigenous": "kun",
+    "pos": "noun"
+  },
+  "sampaikan": {
+    "indigenous": "kun",
+    "pos": "noun"
+  },
+  "bohong": {
+    "indigenous": "pala",
+    "pos": "noun"
+  },
+  "bolos": {
+    "indigenous": "tai kelap",
+    "pos": "noun"
+  },
+  "jalan": {
+    "indigenous": "masat",
+    "pos": "noun"
+  },
+  "jalan-jalan": {
+    "indigenous": "masat-masat",
+    "pos": "noun"
+  },
+  "jangan": {
+    "indigenous": "ain",
+    "pos": "noun"
+  },
+  "keluar": {
+    "indigenous": "kawang",
+    "pos": "noun"
+  },
+  "bekerja": {
+    "indigenous": "gayeng",
+    "pos": "noun"
+  },
+  "kerja": {
+    "indigenous": "gayeng",
+    "pos": "noun"
+  },
+  "kerjakan": {
+    "indigenous": "gayeng",
+    "pos": "noun"
+  },
+  "ketahui": {
+    "indigenous": "tisen",
+    "pos": "noun"
+  },
+  "tau": {
+    "indigenous": "tisen",
+    "pos": "noun"
+  },
+  "makan": {
+    "indigenous": "uman",
+    "pos": "noun"
+  },
+  "mandi": {
+    "indigenous": "ndu'",
+    "pos": "noun"
+  },
+  "masak": {
+    "indigenous": "pesak",
+    "pos": "noun"
+  },
+  "masuk": {
+    "indigenous": "ke dalem",
+    "pos": "noun"
+  },
+  "melihat": {
+    "indigenous": "ngeneng",
+    "pos": "noun"
+  },
+  "melihatnya": {
+    "indigenous": "ngeneng ia",
+    "pos": "noun"
+  },
+  "membeli": {
+    "indigenous": "meli",
+    "pos": "noun"
+  },
+  "mendengar": {
+    "indigenous": "ngeninga",
+    "pos": "noun"
+  },
+  "menyanyi": {
+    "indigenous": "ngendau",
+    "pos": "noun"
+  },
+  "minum": {
+    "indigenous": "nisep",
+    "pos": "noun"
+  },
+  "nyaring": {
+    "indigenous": "bia",
+    "pos": "noun"
+  },
+  "singgah": {
+    "indigenous": "ngena'k",
+    "pos": "noun"
+  },
+  "tinggal": {
+    "indigenous": "ngena'k",
+    "pos": "noun"
+  },
+  "disini": {
+    "indigenous": "ki",
+    "pos": "noun"
+  },
+  "terima": {
+    "indigenous": "tiga",
+    "pos": "noun"
+  },
+  "kasih": {
+    "indigenous": "tawai",
+    "pos": "noun"
+  },
+  "tidur": {
+    "indigenous": "lundog",
+    "pos": "noun"
+  },
+  "pindah": {
+    "indigenous": "buaw",
+    "pos": "noun"
+  },
+  "berteduh": {
+    "indigenous": "ngedingan",
+    "pos": "noun"
+  },
+  "petubo": {
+    "indigenous": "pelihara",
+    "pos": "noun"
+  },
+  "adegan": {
+    "indigenous": "kaa",
+    "pos": "noun"
+  },
+  "banyak": {
+    "indigenous": "kado",
+    "pos": "noun"
+  },
+  "sekali": {
+    "indigenous": "ale",
+    "pos": "noun"
+  },
+  "boleh": {
+    "indigenous": "kong",
+    "pos": "noun"
+  },
+  "dulu": {
+    "indigenous": "ading",
+    "pos": "noun"
+  },
+  "hari": {
+    "indigenous": "tau",
+    "pos": "noun"
+  },
+  "ingatan": {
+    "indigenous": "kimet",
+    "pos": "noun"
+  },
+  "kemarin": {
+    "indigenous": "nya'ep rei",
+    "pos": "noun"
+  },
+  "memang": {
+    "indigenous": "adang",
+    "pos": "noun"
+  },
+  "suka": {
+    "indigenous": "uba",
+    "pos": "noun"
+  },
+  "cinta": {
+    "indigenous": "uba",
+    "pos": "noun"
+  },
+  "sayang": {
+    "indigenous": "uba",
+    "pos": "noun"
+  },
+  "melewati": {
+    "indigenous": "lapa",
+    "pos": "noun"
+  },
+  "sama": {
+    "indigenous": "kuwa",
+    "pos": "noun"
+  },
+  "nama": {
+    "indigenous": "ngadan",
+    "pos": "noun"
+  },
+  "namaku": {
+    "indigenous": "ngadan keq",
+    "pos": "noun"
+  },
+  "ku": {
+    "indigenous": "keq",
+    "pos": "noun"
+  },
+  "oke": {
+    "indigenous": "aha",
+    "pos": "noun"
+  },
+  "iya": {
+    "indigenous": "aha",
+    "pos": "noun"
+  },
+  "pulang": {
+    "indigenous": "ula",
+    "pos": "noun"
+  },
+  "sangat": {
+    "indigenous": "ali'",
+    "pos": "noun"
+  },
+  "semua": {
+    "indigenous": "mung",
+    "pos": "noun"
+  },
+  "seperti": {
+    "indigenous": "kuaq",
+    "pos": "noun"
+  },
+  "suaranya": {
+    "indigenous": "isu'a",
+    "pos": "noun"
+  },
+  "tentu": {
+    "indigenous": "ina",
+    "pos": "noun"
+  },
+  "saja": {
+    "indigenous": "na",
+    "pos": "noun"
+  },
+  "tidak": {
+    "indigenous": "nda",
+    "pos": "noun"
+  },
+  "gayeng": {
+    "indigenous": "tugas",
+    "pos": "noun"
+  },
+  "sekolah": {
+    "indigenous": "sekula",
+    "pos": "noun"
+  },
+  "kabar": {
+    "indigenous": "denga",
+    "pos": "noun"
+  },
+  "berita": {
+    "indigenous": "denga",
+    "pos": "noun"
+  },
+  "hal": {
+    "indigenous": "denga",
+    "pos": "noun"
+  },
+  "kejadian": {
+    "indigenous": "denga",
+    "pos": "noun"
+  },
+  "salah": {
+    "indigenous": "bep",
+    "pos": "noun"
+  },
+  "datang": {
+    "indigenous": "nay",
+    "pos": "noun"
+  },
+  "tersisa": {
+    "indigenous": "naung",
+    "pos": "noun"
+  },
+  "bapak": {
+    "indigenous": "amai",
+    "pos": "noun"
+  },
+  "bersama": {
+    "indigenous": "ilu mung",
+    "pos": "noun"
+  },
+  "hantu": {
+    "indigenous": "bali",
+    "pos": "noun"
+  },
+  "ibu": {
+    "indigenous": "uweq",
+    "pos": "noun"
+  },
+  "kalian": {
+    "indigenous": "ikem",
+    "pos": "noun"
+  },
+  "kami": {
+    "indigenous": "ame",
+    "pos": "noun"
+  },
+  "kamu": {
+    "indigenous": "ikoq",
+    "pos": "noun"
+  },
+  "kau": {
+    "indigenous": "ikoq",
+    "pos": "noun"
+  },
+  "kita": {
+    "indigenous": "ilu",
+    "pos": "noun"
+  },
+  "saya": {
+    "indigenous": "ake",
+    "pos": "noun"
+  },
+  "teman": {
+    "indigenous": "tuyang",
+    "pos": "noun"
+  },
+  "mereka": {
+    "indigenous": "ida",
+    "pos": "noun"
+  },
+  "masing": {
+    "indigenous": "tengen",
+    "pos": "noun"
+  },
+  "masing-masing": {
+    "indigenous": "tengen-tengen",
+    "pos": "noun"
+  },
+  "senin": {
+    "indigenous": "keca",
+    "pos": "noun"
+  },
+  "selasa": {
+    "indigenous": "kedua",
+    "pos": "noun"
+  },
+  "rabu": {
+    "indigenous": "ketelu",
+    "pos": "noun"
+  },
+  "kamis": {
+    "indigenous": "tepat",
+    "pos": "noun"
+  },
+  "jumat": {
+    "indigenous": "kelema",
+    "pos": "noun"
+  },
+  "sabtu": {
+    "indigenous": "kenem",
+    "pos": "noun"
+  },
+  "minggu": {
+    "indigenous": "minggu",
+    "pos": "noun"
+  },
+  "adik": {
+    "indigenous": "ari'",
+    "pos": "noun"
+  },
+  "angin": {
+    "indigenous": "bayu",
+    "pos": "noun"
+  },
+  "air": {
+    "indigenous": "sungai",
+    "pos": "noun"
+  },
+  "rumahmu": {
+    "indigenous": "lamin engku",
+    "pos": "noun"
+  },
+  "ambil": {
+    "indigenous": "alak",
+    "pos": "noun"
+  },
+  "baik": {
+    "indigenous": "lemeli",
+    "pos": "noun"
+  },
+  "berenang": {
+    "indigenous": "nyatung",
+    "pos": "noun"
+  },
+  "bocor": {
+    "indigenous": "tudok",
+    "pos": "noun"
+  },
+  "berak": {
+    "indigenous": "lepin",
+    "pos": "noun"
+  },
+  "berdiri": {
+    "indigenous": "ngrejeng",
+    "pos": "noun"
+  },
+  "bicara": {
+    "indigenous": "petirak",
+    "pos": "noun"
+  },
+  "bintang": {
+    "indigenous": "betuen",
+    "pos": "noun"
+  },
+  "besok": {
+    "indigenous": "nembam",
+    "pos": "noun"
+  },
+  "banjir": {
+    "indigenous": "layap",
+    "pos": "noun"
+  },
+  "berapa": {
+    "indigenous": "kudak",
+    "pos": "noun"
+  },
+  "celana": {
+    "indigenous": "seluen",
+    "pos": "noun"
+  },
+  "cabe": {
+    "indigenous": "lia",
+    "pos": "noun"
+  },
+  "duduk": {
+    "indigenous": "adung",
+    "pos": "noun"
+  },
+  "dingin": {
+    "indigenous": "nyeng",
+    "pos": "noun"
+  },
+  "gelap": {
+    "indigenous": "mendem",
+    "pos": "noun"
+  },
+  "gigi": {
+    "indigenous": "jipen",
+    "pos": "noun"
+  },
+  "gemuk": {
+    "indigenous": "lembo",
+    "pos": "noun"
+  },
+  "gendong": {
+    "indigenous": "bak",
+    "pos": "noun"
+  },
+  "gunung": {
+    "indigenous": "mudung",
+    "pos": "noun"
+  },
+  "gundul": {
+    "indigenous": "ulok",
+    "pos": "noun"
+  },
+  "garam": {
+    "indigenous": "usen",
+    "pos": "noun"
+  },
+  "hidup": {
+    "indigenous": "mudip",
+    "pos": "noun"
+  },
+  "hidung": {
+    "indigenous": "ndung",
+    "pos": "noun"
+  },
+  "hutan": {
+    "indigenous": "a'ut",
+    "pos": "noun"
+  },
+  "haus": {
+    "indigenous": "moang laset",
+    "pos": "noun"
+  },
+  "jernih": {
+    "indigenous": "litut",
+    "pos": "noun"
+  },
+  "mamak": {
+    "indigenous": "tinam",
+    "pos": "noun"
+  },
+  "jatuh": {
+    "indigenous": "labok",
+    "pos": "noun"
+  },
+  "jauh": {
+    "indigenous": "cok",
+    "pos": "noun"
+  },
+  "jelek": {
+    "indigenous": "ja'at",
+    "pos": "noun"
+  },
+  "kencing": {
+    "indigenous": "nyengit",
+    "pos": "noun"
+  },
+  "kenyang": {
+    "indigenous": "beso",
+    "pos": "noun"
+  },
+  "kepala": {
+    "indigenous": "ulu",
+    "pos": "noun"
+  },
+  "keatas": {
+    "indigenous": "kempou",
+    "pos": "noun"
+  },
+  "naik": {
+    "indigenous": "kempou",
+    "pos": "noun"
+  },
+  "kembali": {
+    "indigenous": "ulek",
+    "pos": "noun"
+  },
+  "kemarau": {
+    "indigenous": "tagak",
+    "pos": "noun"
+  },
+  "kakek": {
+    "indigenous": "pui",
+    "pos": "noun"
+  },
+  "nenek": {
+    "indigenous": "pui",
+    "pos": "noun"
+  },
+  "kakak": {
+    "indigenous": "seken",
+    "pos": "noun"
+  },
+  "kaki": {
+    "indigenous": "taket",
+    "pos": "noun"
+  },
+  "kurus": {
+    "indigenous": "mae",
+    "pos": "noun"
+  },
+  "kecil": {
+    "indigenous": "ang",
+    "pos": "noun"
+  },
+  "lihat": {
+    "indigenous": "maat",
+    "pos": "noun"
+  },
+  "lapar": {
+    "indigenous": "lau",
+    "pos": "noun"
+  },
+  "laki": {
+    "indigenous": "laki",
+    "pos": "noun"
+  },
+  "lidah": {
+    "indigenous": "uma",
+    "pos": "noun"
+  },
+  "alkohol": {
+    "indigenous": "jakan",
+    "pos": "noun"
+  },
+  "mabok": {
+    "indigenous": "meduk",
+    "pos": "noun"
+  },
+  "madu": {
+    "indigenous": "layuk",
+    "pos": "noun"
+  },
+  "orang": {
+    "indigenous": "lakeng",
+    "pos": "noun"
+  },
+  "mencari": {
+    "indigenous": "mita",
+    "pos": "noun"
+  },
+  "malu": {
+    "indigenous": "sa'e",
+    "pos": "noun"
+  },
+  "menyelam": {
+    "indigenous": "lemeset",
+    "pos": "noun"
+  },
+  "memanjat": {
+    "indigenous": "lemaket",
+    "pos": "noun"
+  },
+  "menanam": {
+    "indigenous": "mula",
+    "pos": "noun"
+  },
+  "menari": {
+    "indigenous": "kanjet",
+    "pos": "noun"
+  },
+  "mau": {
+    "indigenous": "obak",
+    "pos": "noun"
+  },
+  "mata": {
+    "indigenous": "mata",
+    "pos": "noun"
+  },
+  "mimpi": {
+    "indigenous": "ngenupi",
+    "pos": "noun"
+  },
+  "mencuri": {
+    "indigenous": "mengelau",
+    "pos": "noun"
+  },
+  "menangis": {
+    "indigenous": "menange",
+    "pos": "noun"
+  },
+  "mana": {
+    "indigenous": "mpi",
+    "pos": "noun"
+  },
+  "mati": {
+    "indigenous": "matae",
+    "pos": "noun"
+  },
+  "menyeberang": {
+    "indigenous": "pelawat",
+    "pos": "noun"
+  },
+  "peluk": {
+    "indigenous": "nyekapu",
+    "pos": "noun"
+  },
+  "panen": {
+    "indigenous": "maju",
+    "pos": "noun"
+  },
+  "perut": {
+    "indigenous": "batek",
+    "pos": "noun"
+  },
+  "pahit": {
+    "indigenous": "pait",
+    "pos": "noun"
+  },
+  "pintu": {
+    "indigenous": "pamen",
+    "pos": "noun"
+  },
+  "pakaian": {
+    "indigenous": "sapai",
+    "pos": "noun"
+  },
+  "perahu": {
+    "indigenous": "alut",
+    "pos": "noun"
+  },
+  "parang": {
+    "indigenous": "mandau",
+    "pos": "noun"
+  },
+  "panjang": {
+    "indigenous": "dadok",
+    "pos": "noun"
+  },
+  "pendek": {
+    "indigenous": "bu'et",
+    "pos": "noun"
+  },
+  "pedas": {
+    "indigenous": "sanit",
+    "pos": "noun"
+  },
+  "pergi": {
+    "indigenous": "tei",
+    "pos": "noun"
+  },
+  "pandai": {
+    "indigenous": "encam",
+    "pos": "noun"
+  },
+  "pohon": {
+    "indigenous": "puun",
+    "pos": "noun"
+  },
+  "rindu": {
+    "indigenous": "menok menawai",
+    "pos": "noun"
+  },
+  "sayur": {
+    "indigenous": "lekey",
+    "pos": "noun"
+  },
+  "suami mu": {
+    "indigenous": "laki koq",
+    "pos": "noun"
+  },
+  "satu bulan": {
+    "indigenous": "ca bulan",
+    "pos": "noun"
+  },
+  "setuju": {
+    "indigenous": "aha",
+    "pos": "noun"
+  },
+  "selimut": {
+    "indigenous": "kelumah",
+    "pos": "noun"
+  },
+  "benar": {
+    "indigenous": "sio",
+    "pos": "noun"
+  },
+  "di": {
+    "indigenous": "ka",
+    "pos": "noun"
+  },
+  "sini": {
+    "indigenous": "ini",
+    "pos": "noun"
+  },
+  "sana": {
+    "indigenous": "ina",
+    "pos": "noun"
+  },
+  "situ": {
+    "indigenous": "ina",
+    "pos": "noun"
+  },
+  "berlari": {
+    "indigenous": "kasa",
+    "pos": "noun"
+  },
+  "berbaring": {
+    "indigenous": "meken",
+    "pos": "noun"
+  },
+  "bersandar": {
+    "indigenous": "nyendei",
+    "pos": "noun"
+  },
+  "berkebun": {
+    "indigenous": "uyam pula",
+    "pos": "noun"
+  },
+  "nasi": {
+    "indigenous": "kenan",
+    "pos": "noun"
+  },
+  "pedagang": {
+    "indigenous": "toke",
+    "pos": "noun"
+  },
+  "nangis": {
+    "indigenous": "nange",
+    "pos": "noun"
+  },
+  "main": {
+    "indigenous": "piat",
+    "pos": "noun"
+  },
+  "ya": {
+    "indigenous": "aha",
+    "pos": "noun"
+  },
+  "antara": {
+    "indigenous": "aang",
+    "pos": "noun"
+  },
+  "hilir": {
+    "indigenous": "aba",
+    "pos": "noun"
+  },
+  "peraturan": {
+    "indigenous": "adet",
+    "pos": "noun"
+  },
+  "kenapa": {
+    "indigenous": "adi",
+    "pos": "noun"
+  },
+  "mengapa": {
+    "indigenous": "adi",
+    "pos": "noun"
+  },
+  "kesatu": {
+    "indigenous": "ading",
+    "pos": "noun"
+  },
+  "dahulu": {
+    "indigenous": "ading",
+    "pos": "noun"
+  },
+  "terdahulu": {
+    "indigenous": "ading",
+    "pos": "noun"
+  },
+  "lalang": {
+    "indigenous": "ai'",
+    "pos": "noun"
+  },
+  "pasir": {
+    "indigenous": "ait",
+    "pos": "noun"
+  },
+  "tuntun": {
+    "indigenous": "ajak",
+    "pos": "noun"
+  },
+  "baris": {
+    "indigenous": "ajat",
+    "pos": "noun"
+  },
+  "keberanian": {
+    "indigenous": "akang",
+    "pos": "noun"
+  },
+  "memberanikan": {
+    "indigenous": "ngakang",
+    "pos": "noun"
+  },
+  "berani": {
+    "indigenous": "makang",
+    "pos": "noun"
+  },
+  "ide": {
+    "indigenous": "aken",
+    "pos": "noun"
+  },
+  "pikiran": {
+    "indigenous": "aken",
+    "pos": "noun"
+  },
+  "kebijaksanaan": {
+    "indigenous": "aken",
+    "pos": "noun"
+  },
+  "pinggang": {
+    "indigenous": "aking",
+    "pos": "noun"
+  },
+  "rakit": {
+    "indigenous": "akit",
+    "pos": "noun"
+  },
+  "kapal": {
+    "indigenous": "akit",
+    "pos": "noun"
+  },
+  "meraup": {
+    "indigenous": "makup",
+    "pos": "noun"
+  },
+  "cupu": {
+    "indigenous": "a'i'",
+    "pos": "noun"
+  },
+  "jantan": {
+    "indigenous": "a'ung",
+    "pos": "noun"
+  },
+  "belukar": {
+    "indigenous": "ma'ut",
+    "pos": "noun"
+  },
+  "semak": {
+    "indigenous": "ma'ut",
+    "pos": "noun"
+  },
+  "bersemak": {
+    "indigenous": "ma'ut",
+    "pos": "noun"
+  },
+  "berumput": {
+    "indigenous": "ma'ut",
+    "pos": "noun"
+  },
+  "rumput": {
+    "indigenous": "ma'ut",
+    "pos": "noun"
+  },
+  "dapat": {
+    "indigenous": "ala'",
+    "pos": "noun"
+  },
+  "mendapatkan": {
+    "indigenous": "ala'",
+    "pos": "noun"
+  },
+  "bisa": {
+    "indigenous": "ala'",
+    "pos": "noun"
+  },
+  "ranting": {
+    "indigenous": "alan",
+    "pos": "noun"
+  },
+  "setengah": {
+    "indigenous": "alang",
+    "pos": "noun"
+  },
+  "kebiasaan": {
+    "indigenous": "alay",
+    "pos": "noun"
+  },
+  "lazim": {
+    "indigenous": "alay",
+    "pos": "noun"
+  },
+  "jalur": {
+    "indigenous": "ale",
+    "pos": "noun"
+  },
+  "banding": {
+    "indigenous": "aliu",
+    "pos": "noun"
+  },
+  "arus": {
+    "indigenous": "alo",
+    "pos": "noun"
+  },
+  "mengukur": {
+    "indigenous": "alut",
+    "pos": "noun"
+  },
+  "simpan": {
+    "indigenous": "mambin",
+    "pos": "noun"
+  },
+  "menyimpan": {
+    "indigenous": "mambin",
+    "pos": "noun"
+  },
+  "memegang": {
+    "indigenous": "mambin",
+    "pos": "noun"
+  },
+  "pegang": {
+    "indigenous": "mambin",
+    "pos": "noun"
+  },
+  "memelihara": {
+    "indigenous": "mambim",
+    "pos": "noun"
+  },
+  "tersimpan": {
+    "indigenous": "pambin",
+    "pos": "noun"
+  },
+  "rantai": {
+    "indigenous": "ambit",
+    "pos": "noun"
+  },
+  "bodoh": {
+    "indigenous": "ameng",
+    "pos": "noun"
+  },
+  "bisu": {
+    "indigenous": "ameng",
+    "pos": "noun"
+  },
+  "keluarga": {
+    "indigenous": "amit",
+    "pos": "noun"
+  },
+  "mungkin": {
+    "indigenous": "amu'",
+    "pos": "noun"
+  },
+  "kekanakkanakan": {
+    "indigenous": "pekanak",
+    "pos": "noun"
+  },
+  "kembar": {
+    "indigenous": "pit",
+    "pos": "noun"
+  },
+  "saudara": {
+    "indigenous": "aung",
+    "pos": "noun"
+  },
+  "saudari": {
+    "indigenous": "aung",
+    "pos": "noun"
+  },
+  "menatap": {
+    "indigenous": "aneng",
+    "pos": "noun"
+  },
+  "tatap": {
+    "indigenous": "aneng",
+    "pos": "noun"
+  },
+  "kulit": {
+    "indigenous": "anit",
+    "pos": "noun"
+  },
+  "punya": {
+    "indigenous": "anun",
+    "pos": "noun"
+  },
+  "milik": {
+    "indigenous": "anun",
+    "pos": "noun"
+  },
+  "rintangan": {
+    "indigenous": "apat",
+    "pos": "noun"
+  },
+  "aral": {
+    "indigenous": "apat",
+    "pos": "noun"
+  },
+  "halangan": {
+    "indigenous": "apat",
+    "pos": "noun"
+  },
+  "terlintang": {
+    "indigenous": "papat",
+    "pos": "noun"
+  },
+  "tertahan": {
+    "indigenous": "papat",
+    "pos": "noun"
+  },
+  "terhalang": {
+    "indigenous": "papat",
+    "pos": "noun"
+  },
+  "menara": {
+    "indigenous": "apaw",
+    "pos": "noun"
+  },
+  "penara": {
+    "indigenous": "apaw",
+    "pos": "noun"
+  },
+  "bukit": {
+    "indigenous": "apaw",
+    "pos": "noun"
+  },
+  "tali": {
+    "indigenous": "apay",
+    "pos": "noun"
+  },
+  "cacat": {
+    "indigenous": "apet",
+    "pos": "noun"
+  },
+  "kapur": {
+    "indigenous": "apo",
+    "pos": "noun"
+  },
+  "tertarik": {
+    "indigenous": "arep",
+    "pos": "noun"
+  },
+  "berminat": {
+    "indigenous": "arep",
+    "pos": "noun"
+  },
+  "keinginan": {
+    "indigenous": "arep",
+    "pos": "noun"
+  },
+  "cenderung": {
+    "indigenous": "arep",
+    "pos": "noun"
+  },
+  "lahap": {
+    "indigenous": "asam",
+    "pos": "noun"
+  },
+  "rakus": {
+    "indigenous": "asam",
+    "pos": "noun"
+  },
+  "likut": {
+    "indigenous": "mundur",
+    "pos": "noun"
+  },
+  "asal": {
+    "indigenous": "asen",
+    "pos": "noun"
+  },
+  "jurang": {
+    "indigenous": "asep",
+    "pos": "noun"
+  },
+  "lembah": {
+    "indigenous": "asep",
+    "pos": "noun"
+  },
+  "beratus": {
+    "indigenous": "ato",
+    "pos": "noun"
+  },
+  "meletakkan": {
+    "indigenous": "maung",
+    "pos": "noun"
+  },
+  "menempatkan": {
+    "indigenous": "maung",
+    "pos": "noun"
+  },
+  "menaruh": {
+    "indigenous": "maung",
+    "pos": "noun"
+  },
+  "andai": {
+    "indigenous": "awa'",
+    "pos": "noun"
+  }
+}

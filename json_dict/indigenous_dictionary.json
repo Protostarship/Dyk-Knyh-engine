@@ -1,0 +1,1674 @@
+{
+  "0": {
+    "indigenous": "ca",
+    "indonesian": "satu"
+  },
+  "1": {
+    "indigenous": "dua",
+    "indonesian": "dua"
+  },
+  "2": {
+    "indigenous": "telu",
+    "indonesian": "tiga"
+  },
+  "3": {
+    "indigenous": "pat",
+    "indonesian": "empat"
+  },
+  "4": {
+    "indigenous": "lema",
+    "indonesian": "lima"
+  },
+  "5": {
+    "indigenous": "nem",
+    "indonesian": "enam"
+  },
+  "6": {
+    "indigenous": "tujuk",
+    "indonesian": "tujuh"
+  },
+  "7": {
+    "indigenous": "aya",
+    "indonesian": "delapan"
+  },
+  "8": {
+    "indigenous": "pe'en",
+    "indonesian": "sembilan"
+  },
+  "9": {
+    "indigenous": "puluk",
+    "indonesian": "sepuluh"
+  },
+  "10": {
+    "indigenous": "ca ato",
+    "indonesian": "seratus"
+  },
+  "11": {
+    "indigenous": "ca ibu",
+    "indonesian": "seribu"
+  },
+  "12": {
+    "indigenous": "ca juta",
+    "indonesian": "sejuta"
+  },
+  "13": {
+    "indigenous": "ato",
+    "indonesian": "ratus"
+  },
+  "14": {
+    "indigenous": "ibu",
+    "indonesian": "ribu"
+  },
+  "15": {
+    "indigenous": "inu",
+    "indonesian": "apa"
+  },
+  "16": {
+    "indigenous": "la",
+    "indonesian": "nya"
+  },
+  "17": {
+    "indigenous": "ake",
+    "indonesian": "aku"
+  },
+  "18": {
+    "indigenous": "aun",
+    "indonesian": "ada"
+  },
+  "19": {
+    "indigenous": "kenpi",
+    "indonesian": "kemana"
+  },
+  "20": {
+    "indigenous": "kenpi",
+    "indonesian": "dimana"
+  },
+  "21": {
+    "indigenous": "ahe",
+    "indonesian": "siapa"
+  },
+  "22": {
+    "indigenous": "mi'an",
+    "indonesian": "kapan"
+  },
+  "23": {
+    "indigenous": "kumpin",
+    "indonesian": "bagaimana"
+  },
+  "24": {
+    "indigenous": "putek",
+    "indonesian": "putih"
+  },
+  "25": {
+    "indigenous": "saleng",
+    "indonesian": "hitam"
+  },
+  "26": {
+    "indigenous": "bala",
+    "indonesian": "merah"
+  },
+  "27": {
+    "indigenous": "udut",
+    "indonesian": "anjing"
+  },
+  "28": {
+    "indigenous": "yap",
+    "indonesian": "ayam"
+  },
+  "29": {
+    "indigenous": "babui",
+    "indonesian": "babi"
+  },
+  "30": {
+    "indigenous": "kalasiau",
+    "indonesian": "banteng"
+  },
+  "31": {
+    "indigenous": "bidik",
+    "indonesian": "bebek"
+  },
+  "32": {
+    "indigenous": "kade",
+    "indonesian": "belalang"
+  },
+  "33": {
+    "indigenous": "buang",
+    "indonesian": "beruang"
+  },
+  "34": {
+    "indigenous": "kabuk",
+    "indonesian": "biawak"
+  },
+  "35": {
+    "indigenous": "baya",
+    "indonesian": "buaya"
+  },
+  "36": {
+    "indigenous": "sui",
+    "indonesian": "burung"
+  },
+  "37": {
+    "indigenous": "aru",
+    "indonesian": "cicak"
+  },
+  "38": {
+    "indigenous": "kesun",
+    "indonesian": "gajah"
+  },
+  "39": {
+    "indigenous": "lenjau",
+    "indonesian": "harimau"
+  },
+  "40": {
+    "indigenous": "atuk",
+    "indonesian": "ikan"
+  },
+  "41": {
+    "indigenous": "kati",
+    "indonesian": "lele"
+  },
+  "42": {
+    "indigenous": "selareng",
+    "indonesian": "patin"
+  },
+  "43": {
+    "indigenous": "kadeng",
+    "indonesian": "kambing"
+  },
+  "44": {
+    "indigenous": "pelanuk",
+    "indonesian": "kancil"
+  },
+  "45": {
+    "indigenous": "lepa",
+    "indonesian": "kecoa"
+  },
+  "46": {
+    "indigenous": "yu",
+    "indonesian": "kepiting"
+  },
+  "47": {
+    "indigenous": "payak",
+    "indonesian": "kijang"
+  },
+  "48": {
+    "indigenous": "sui",
+    "indonesian": "kodok"
+  },
+  "49": {
+    "indigenous": "sing",
+    "indonesian": "kucing"
+  },
+  "50": {
+    "indigenous": "bamper",
+    "indonesian": "kupu-kupu"
+  },
+  "51": {
+    "indigenous": "langau",
+    "indonesian": "lalat"
+  },
+  "52": {
+    "indigenous": "lati",
+    "indonesian": "cacing"
+  },
+  "53": {
+    "indigenous": "kule",
+    "indonesian": "macan"
+  },
+  "54": {
+    "indigenous": "kuyata",
+    "indonesian": "monyet"
+  },
+  "55": {
+    "indigenous": "jamok",
+    "indonesian": "nyamuk"
+  },
+  "56": {
+    "indigenous": "uca",
+    "indonesian": "rusa"
+  },
+  "57": {
+    "indigenous": "sik/ulung",
+    "indonesian": "siput"
+  },
+  "58": {
+    "indigenous": "belabau",
+    "indonesian": "tikus"
+  },
+  "59": {
+    "indigenous": "tuduk",
+    "indonesian": "ular"
+  },
+  "60": {
+    "indigenous": "tia",
+    "indonesian": "bagus"
+  },
+  "61": {
+    "indigenous": "mading",
+    "indonesian": "baru"
+  },
+  "62": {
+    "indigenous": "bio",
+    "indonesian": "besar"
+  },
+  "63": {
+    "indigenous": "sangit",
+    "indonesian": "cepat"
+  },
+  "64": {
+    "indigenous": "puyan",
+    "indonesian": "kelakuan"
+  },
+  "65": {
+    "indigenous": "mpi un",
+    "indonesian": "kosong"
+  },
+  "66": {
+    "indigenous": "malat",
+    "indonesian": "malas"
+  },
+  "67": {
+    "indigenous": "lan",
+    "indonesian": "nyata"
+  },
+  "68": {
+    "indigenous": "ma'em",
+    "indonesian": "pelit"
+  },
+  "69": {
+    "indigenous": "nyian",
+    "indonesian": "ringan"
+  },
+  "70": {
+    "indigenous": "agat",
+    "indonesian": "sehat"
+  },
+  "71": {
+    "indigenous": "tading nempam",
+    "indonesian": "pagi"
+  },
+  "72": {
+    "indigenous": "naktau",
+    "indonesian": "siang"
+  },
+  "73": {
+    "indigenous": "nataup",
+    "indonesian": "malam"
+  },
+  "74": {
+    "indigenous": "lamak",
+    "indonesian": "sibuk"
+  },
+  "75": {
+    "indigenous": "kado",
+    "indonesian": "berbagai"
+  },
+  "76": {
+    "indigenous": "ataw",
+    "indonesian": "atau"
+  },
+  "77": {
+    "indigenous": "ngan",
+    "indonesian": "dan"
+  },
+  "78": {
+    "indigenous": "cen",
+    "indonesian": "dari"
+  },
+  "79": {
+    "indigenous": "cen",
+    "indonesian": "berasal"
+  },
+  "80": {
+    "indigenous": "dalau",
+    "indonesian": "diantara"
+  },
+  "81": {
+    "indigenous": "pe",
+    "indonesian": "juga"
+  },
+  "82": {
+    "indigenous": "uban",
+    "indonesian": "karena"
+  },
+  "83": {
+    "indigenous": "koq",
+    "indonesian": "ke"
+  },
+  "84": {
+    "indigenous": "lepa ini",
+    "indonesian": "mending"
+  },
+  "85": {
+    "indigenous": "sa taup",
+    "indonesian": "saat"
+  },
+  "86": {
+    "indigenous": "ken'a",
+    "indonesian": "sebelum"
+  },
+  "87": {
+    "indigenous": "untepu'o",
+    "indonesian": "tapi"
+  },
+  "88": {
+    "indigenous": "untepu'o",
+    "indonesian": "tetapi"
+  },
+  "89": {
+    "indigenous": "lepa kadi",
+    "indonesian": "setelah"
+  },
+  "90": {
+    "indigenous": "apan",
+    "indonesian": "supaya"
+  },
+  "91": {
+    "indigenous": "apan",
+    "indonesian": "agar"
+  },
+  "92": {
+    "indigenous": "un",
+    "indonesian": "untuk"
+  },
+  "93": {
+    "indigenous": "yak",
+    "indonesian": "yang"
+  },
+  "94": {
+    "indigenous": "ja ne",
+    "indonesian": "adalah"
+  },
+  "95": {
+    "indigenous": "ialah",
+    "indonesian": "ialah"
+  },
+  "96": {
+    "indigenous": "awa'",
+    "indonesian": "kalau"
+  },
+  "97": {
+    "indigenous": "usa",
+    "indonesian": "badan"
+  },
+  "98": {
+    "indigenous": "sapai",
+    "indonesian": "baju"
+  },
+  "99": {
+    "indigenous": "buaq",
+    "indonesian": "buah"
+  },
+  "100": {
+    "indigenous": "ta'ep",
+    "indonesian": "keledang"
+  },
+  "101": {
+    "indigenous": "nakan",
+    "indonesian": "cempedak"
+  },
+  "102": {
+    "indigenous": "pakit",
+    "indonesian": "lay"
+  },
+  "103": {
+    "indigenous": "sangit",
+    "indonesian": "rambutan"
+  },
+  "104": {
+    "indigenous": "lepo",
+    "indonesian": "desa"
+  },
+  "105": {
+    "indigenous": "gula'k",
+    "indonesian": "gula"
+  },
+  "106": {
+    "indigenous": "sekan",
+    "indonesian": "jendela"
+  },
+  "107": {
+    "indigenous": "tilung lundo",
+    "indonesian": "kamar"
+  },
+  "108": {
+    "indigenous": "adan",
+    "indonesian": "kursi"
+  },
+  "109": {
+    "indigenous": "buan",
+    "indonesian": "lemari"
+  },
+  "110": {
+    "indigenous": "kanen lema'k",
+    "indonesian": "lontong"
+  },
+  "111": {
+    "indigenous": "penguman",
+    "indonesian": "makanan"
+  },
+  "112": {
+    "indigenous": "uman",
+    "indonesian": "memakan"
+  },
+  "113": {
+    "indigenous": "uman",
+    "indonesian": "dimakan"
+  },
+  "114": {
+    "indigenous": "mejak",
+    "indonesian": "meja"
+  },
+  "115": {
+    "indigenous": "nisep ia",
+    "indonesian": "minuman"
+  },
+  "116": {
+    "indigenous": "lenya",
+    "indonesian": "minyak"
+  },
+  "117": {
+    "indigenous": "oto",
+    "indonesian": "mobil"
+  },
+  "118": {
+    "indigenous": "saga",
+    "indonesian": "goreng"
+  },
+  "119": {
+    "indigenous": "pasen",
+    "indonesian": "pasar"
+  },
+  "120": {
+    "indigenous": "kiyat",
+    "indonesian": "piring"
+  },
+  "121": {
+    "indigenous": "lepau",
+    "indonesian": "pondok"
+  },
+  "122": {
+    "indigenous": "amin",
+    "indonesian": "rumah"
+  },
+  "123": {
+    "indigenous": "alo",
+    "indonesian": "sungai"
+  },
+  "124": {
+    "indigenous": "bek",
+    "indonesian": "tas"
+  },
+  "125": {
+    "indigenous": "telo",
+    "indonesian": "telur"
+  },
+  "126": {
+    "indigenous": "liwang",
+    "indonesian": "kandang"
+  },
+  "127": {
+    "indigenous": "lepa",
+    "indonesian": "sudah"
+  },
+  "128": {
+    "indigenous": "pa",
+    "indonesian": "sampai"
+  },
+  "129": {
+    "indigenous": "liwer",
+    "indonesian": "balik"
+  },
+  "130": {
+    "indigenous": "taga",
+    "indonesian": "bangun"
+  },
+  "131": {
+    "indigenous": "pekalai",
+    "indonesian": "belajar"
+  },
+  "132": {
+    "indigenous": "tai te",
+    "indonesian": "berangkat"
+  },
+  "133": {
+    "indigenous": "piat",
+    "indonesian": "bermain"
+  },
+  "134": {
+    "indigenous": "pekimet",
+    "indonesian": "berpikir"
+  },
+  "135": {
+    "indigenous": "uyan",
+    "indonesian": "bikin"
+  },
+  "136": {
+    "indigenous": "uyan",
+    "indonesian": "buat"
+  },
+  "137": {
+    "indigenous": "kun",
+    "indonesian": "bilang"
+  },
+  "138": {
+    "indigenous": "kun",
+    "indonesian": "sampaikan"
+  },
+  "139": {
+    "indigenous": "pala",
+    "indonesian": "bohong"
+  },
+  "140": {
+    "indigenous": "tai kelap",
+    "indonesian": "bolos"
+  },
+  "141": {
+    "indigenous": "masat",
+    "indonesian": "jalan"
+  },
+  "142": {
+    "indigenous": "masat-masat",
+    "indonesian": "jalan-jalan"
+  },
+  "143": {
+    "indigenous": "ain",
+    "indonesian": "jangan"
+  },
+  "144": {
+    "indigenous": "kawang",
+    "indonesian": "keluar"
+  },
+  "145": {
+    "indigenous": "gayeng",
+    "indonesian": "bekerja"
+  },
+  "146": {
+    "indigenous": "gayeng",
+    "indonesian": "kerja"
+  },
+  "147": {
+    "indigenous": "gayeng",
+    "indonesian": "kerjakan"
+  },
+  "148": {
+    "indigenous": "tisen",
+    "indonesian": "ketahui"
+  },
+  "149": {
+    "indigenous": "tisen",
+    "indonesian": "tau"
+  },
+  "150": {
+    "indigenous": "uman",
+    "indonesian": "makan"
+  },
+  "151": {
+    "indigenous": "ndu'",
+    "indonesian": "mandi"
+  },
+  "152": {
+    "indigenous": "pesak",
+    "indonesian": "masak"
+  },
+  "153": {
+    "indigenous": "ke dalem",
+    "indonesian": "masuk"
+  },
+  "154": {
+    "indigenous": "ngeneng",
+    "indonesian": "melihat"
+  },
+  "155": {
+    "indigenous": "ngeneng ia",
+    "indonesian": "melihatnya"
+  },
+  "156": {
+    "indigenous": "meli",
+    "indonesian": "membeli"
+  },
+  "157": {
+    "indigenous": "ngeninga",
+    "indonesian": "mendengar"
+  },
+  "158": {
+    "indigenous": "ngendau",
+    "indonesian": "menyanyi"
+  },
+  "159": {
+    "indigenous": "nisep",
+    "indonesian": "minum"
+  },
+  "160": {
+    "indigenous": "bia",
+    "indonesian": "nyaring"
+  },
+  "161": {
+    "indigenous": "ngena'k",
+    "indonesian": "singgah"
+  },
+  "162": {
+    "indigenous": "ngena'k",
+    "indonesian": "tinggal"
+  },
+  "163": {
+    "indigenous": "ki",
+    "indonesian": "disini"
+  },
+  "164": {
+    "indigenous": "tiga",
+    "indonesian": "terima"
+  },
+  "165": {
+    "indigenous": "tawai",
+    "indonesian": "kasih"
+  },
+  "166": {
+    "indigenous": "lundog",
+    "indonesian": "tidur"
+  },
+  "167": {
+    "indigenous": "buaw",
+    "indonesian": "pindah"
+  },
+  "168": {
+    "indigenous": "ngedingan",
+    "indonesian": "berteduh"
+  },
+  "169": {
+    "indigenous": "pelihara",
+    "indonesian": "petubo"
+  },
+  "170": {
+    "indigenous": "kaa",
+    "indonesian": "adegan"
+  },
+  "171": {
+    "indigenous": "kado",
+    "indonesian": "banyak"
+  },
+  "172": {
+    "indigenous": "ale",
+    "indonesian": "sekali"
+  },
+  "173": {
+    "indigenous": "kong",
+    "indonesian": "boleh"
+  },
+  "174": {
+    "indigenous": "ading",
+    "indonesian": "dulu"
+  },
+  "175": {
+    "indigenous": "tau",
+    "indonesian": "hari"
+  },
+  "176": {
+    "indigenous": "kimet",
+    "indonesian": "ingatan"
+  },
+  "177": {
+    "indigenous": "nya'ep rei",
+    "indonesian": "kemarin"
+  },
+  "178": {
+    "indigenous": "adang",
+    "indonesian": "memang"
+  },
+  "179": {
+    "indigenous": "uba",
+    "indonesian": "suka"
+  },
+  "180": {
+    "indigenous": "uba",
+    "indonesian": "cinta"
+  },
+  "181": {
+    "indigenous": "uba",
+    "indonesian": "sayang"
+  },
+  "182": {
+    "indigenous": "lapa",
+    "indonesian": "melewati"
+  },
+  "183": {
+    "indigenous": "kuwa",
+    "indonesian": "sama"
+  },
+  "184": {
+    "indigenous": "ngadan",
+    "indonesian": "nama"
+  },
+  "185": {
+    "indigenous": "ngadan keq",
+    "indonesian": "namaku"
+  },
+  "186": {
+    "indigenous": "keq",
+    "indonesian": "ku"
+  },
+  "187": {
+    "indigenous": "aha",
+    "indonesian": "oke"
+  },
+  "188": {
+    "indigenous": "aha",
+    "indonesian": "iya"
+  },
+  "189": {
+    "indigenous": "ula",
+    "indonesian": "pulang"
+  },
+  "190": {
+    "indigenous": "ali'",
+    "indonesian": "sangat"
+  },
+  "191": {
+    "indigenous": "mung",
+    "indonesian": "semua"
+  },
+  "192": {
+    "indigenous": "kuaq",
+    "indonesian": "seperti"
+  },
+  "193": {
+    "indigenous": "isu'a",
+    "indonesian": "suaranya"
+  },
+  "194": {
+    "indigenous": "ina",
+    "indonesian": "tentu"
+  },
+  "195": {
+    "indigenous": "na",
+    "indonesian": "saja"
+  },
+  "196": {
+    "indigenous": "nda",
+    "indonesian": "tidak"
+  },
+  "197": {
+    "indigenous": "tugas",
+    "indonesian": "gayeng"
+  },
+  "198": {
+    "indigenous": "sekula",
+    "indonesian": "sekolah"
+  },
+  "199": {
+    "indigenous": "denga",
+    "indonesian": "kabar"
+  },
+  "200": {
+    "indigenous": "denga",
+    "indonesian": "berita"
+  },
+  "201": {
+    "indigenous": "denga",
+    "indonesian": "hal"
+  },
+  "202": {
+    "indigenous": "denga",
+    "indonesian": "kejadian"
+  },
+  "203": {
+    "indigenous": "bep",
+    "indonesian": "salah"
+  },
+  "204": {
+    "indigenous": "nay",
+    "indonesian": "datang"
+  },
+  "205": {
+    "indigenous": "naung",
+    "indonesian": "tersisa"
+  },
+  "206": {
+    "indigenous": "amai",
+    "indonesian": "bapak"
+  },
+  "207": {
+    "indigenous": "ilu mung",
+    "indonesian": "bersama"
+  },
+  "208": {
+    "indigenous": "bali",
+    "indonesian": "hantu"
+  },
+  "209": {
+    "indigenous": "uweq",
+    "indonesian": "ibu"
+  },
+  "210": {
+    "indigenous": "ikem",
+    "indonesian": "kalian"
+  },
+  "211": {
+    "indigenous": "ame",
+    "indonesian": "kami"
+  },
+  "212": {
+    "indigenous": "ikoq",
+    "indonesian": "kamu"
+  },
+  "213": {
+    "indigenous": "ikoq",
+    "indonesian": "kau"
+  },
+  "214": {
+    "indigenous": "ilu",
+    "indonesian": "kita"
+  },
+  "215": {
+    "indigenous": "ake",
+    "indonesian": "saya"
+  },
+  "216": {
+    "indigenous": "tuyang",
+    "indonesian": "teman"
+  },
+  "217": {
+    "indigenous": "ida",
+    "indonesian": "mereka"
+  },
+  "218": {
+    "indigenous": "tengen",
+    "indonesian": "masing"
+  },
+  "219": {
+    "indigenous": "tengen-tengen",
+    "indonesian": "masing-masing"
+  },
+  "220": {
+    "indigenous": "keca",
+    "indonesian": "senin"
+  },
+  "221": {
+    "indigenous": "kedua",
+    "indonesian": "selasa"
+  },
+  "222": {
+    "indigenous": "ketelu",
+    "indonesian": "rabu"
+  },
+  "223": {
+    "indigenous": "tepat",
+    "indonesian": "kamis"
+  },
+  "224": {
+    "indigenous": "kelema",
+    "indonesian": "jumat"
+  },
+  "225": {
+    "indigenous": "kenem",
+    "indonesian": "sabtu"
+  },
+  "226": {
+    "indigenous": "minggu",
+    "indonesian": "minggu"
+  },
+  "227": {
+    "indigenous": "ari'",
+    "indonesian": "adik"
+  },
+  "228": {
+    "indigenous": "bayu",
+    "indonesian": "angin"
+  },
+  "229": {
+    "indigenous": "sungai",
+    "indonesian": "air"
+  },
+  "230": {
+    "indigenous": "lamin engku",
+    "indonesian": "rumahmu"
+  },
+  "231": {
+    "indigenous": "alak",
+    "indonesian": "ambil"
+  },
+  "232": {
+    "indigenous": "lemeli",
+    "indonesian": "baik"
+  },
+  "233": {
+    "indigenous": "nyatung",
+    "indonesian": "berenang"
+  },
+  "234": {
+    "indigenous": "tudok",
+    "indonesian": "bocor"
+  },
+  "235": {
+    "indigenous": "lepin",
+    "indonesian": "berak"
+  },
+  "236": {
+    "indigenous": "ngrejeng",
+    "indonesian": "berdiri"
+  },
+  "237": {
+    "indigenous": "petirak",
+    "indonesian": "bicara"
+  },
+  "238": {
+    "indigenous": "betuen",
+    "indonesian": "bintang"
+  },
+  "239": {
+    "indigenous": "nembam",
+    "indonesian": "besok"
+  },
+  "240": {
+    "indigenous": "layap",
+    "indonesian": "banjir"
+  },
+  "241": {
+    "indigenous": "kudak",
+    "indonesian": "berapa"
+  },
+  "242": {
+    "indigenous": "seluen",
+    "indonesian": "celana"
+  },
+  "243": {
+    "indigenous": "lia",
+    "indonesian": "cabe"
+  },
+  "244": {
+    "indigenous": "adung",
+    "indonesian": "duduk"
+  },
+  "245": {
+    "indigenous": "nyeng",
+    "indonesian": "dingin"
+  },
+  "246": {
+    "indigenous": "mendem",
+    "indonesian": "gelap"
+  },
+  "247": {
+    "indigenous": "jipen",
+    "indonesian": "gigi"
+  },
+  "248": {
+    "indigenous": "lembo",
+    "indonesian": "gemuk"
+  },
+  "249": {
+    "indigenous": "bak",
+    "indonesian": "gendong"
+  },
+  "250": {
+    "indigenous": "mudung",
+    "indonesian": "gunung"
+  },
+  "251": {
+    "indigenous": "ulok",
+    "indonesian": "gundul"
+  },
+  "252": {
+    "indigenous": "usen",
+    "indonesian": "garam"
+  },
+  "253": {
+    "indigenous": "mudip",
+    "indonesian": "hidup"
+  },
+  "254": {
+    "indigenous": "ndung",
+    "indonesian": "hidung"
+  },
+  "255": {
+    "indigenous": "a'ut",
+    "indonesian": "hutan"
+  },
+  "256": {
+    "indigenous": "moang laset",
+    "indonesian": "haus"
+  },
+  "257": {
+    "indigenous": "litut",
+    "indonesian": "jernih"
+  },
+  "258": {
+    "indigenous": "tinam",
+    "indonesian": "mamak"
+  },
+  "259": {
+    "indigenous": "labok",
+    "indonesian": "jatuh"
+  },
+  "260": {
+    "indigenous": "cok",
+    "indonesian": "jauh"
+  },
+  "261": {
+    "indigenous": "ja'at",
+    "indonesian": "jelek"
+  },
+  "262": {
+    "indigenous": "nyengit",
+    "indonesian": "kencing"
+  },
+  "263": {
+    "indigenous": "beso",
+    "indonesian": "kenyang"
+  },
+  "264": {
+    "indigenous": "ulu",
+    "indonesian": "kepala"
+  },
+  "265": {
+    "indigenous": "kempou",
+    "indonesian": "keatas"
+  },
+  "266": {
+    "indigenous": "kempou",
+    "indonesian": "naik"
+  },
+  "267": {
+    "indigenous": "ulek",
+    "indonesian": "kembali"
+  },
+  "268": {
+    "indigenous": "tagak",
+    "indonesian": "kemarau"
+  },
+  "269": {
+    "indigenous": "pui",
+    "indonesian": "kakek"
+  },
+  "270": {
+    "indigenous": "pui",
+    "indonesian": "nenek"
+  },
+  "271": {
+    "indigenous": "seken",
+    "indonesian": "kakak"
+  },
+  "272": {
+    "indigenous": "taket",
+    "indonesian": "kaki"
+  },
+  "273": {
+    "indigenous": "mae",
+    "indonesian": "kurus"
+  },
+  "274": {
+    "indigenous": "ang",
+    "indonesian": "kecil"
+  },
+  "275": {
+    "indigenous": "maat",
+    "indonesian": "lihat"
+  },
+  "276": {
+    "indigenous": "lau",
+    "indonesian": "lapar"
+  },
+  "277": {
+    "indigenous": "laki",
+    "indonesian": "laki"
+  },
+  "278": {
+    "indigenous": "uma",
+    "indonesian": "lidah"
+  },
+  "279": {
+    "indigenous": "jakan",
+    "indonesian": "alkohol"
+  },
+  "280": {
+    "indigenous": "meduk",
+    "indonesian": "mabok"
+  },
+  "281": {
+    "indigenous": "layuk",
+    "indonesian": "madu"
+  },
+  "282": {
+    "indigenous": "lakeng",
+    "indonesian": "orang"
+  },
+  "283": {
+    "indigenous": "mita",
+    "indonesian": "mencari"
+  },
+  "284": {
+    "indigenous": "sa'e",
+    "indonesian": "malu"
+  },
+  "285": {
+    "indigenous": "lemeset",
+    "indonesian": "menyelam"
+  },
+  "286": {
+    "indigenous": "lemaket",
+    "indonesian": "memanjat"
+  },
+  "287": {
+    "indigenous": "mula",
+    "indonesian": "menanam"
+  },
+  "288": {
+    "indigenous": "kanjet",
+    "indonesian": "menari"
+  },
+  "289": {
+    "indigenous": "obak",
+    "indonesian": "mau"
+  },
+  "290": {
+    "indigenous": "mata",
+    "indonesian": "mata"
+  },
+  "291": {
+    "indigenous": "ngenupi",
+    "indonesian": "mimpi"
+  },
+  "292": {
+    "indigenous": "mengelau",
+    "indonesian": "mencuri"
+  },
+  "293": {
+    "indigenous": "menange",
+    "indonesian": "menangis"
+  },
+  "294": {
+    "indigenous": "mpi",
+    "indonesian": "mana"
+  },
+  "295": {
+    "indigenous": "matae",
+    "indonesian": "mati"
+  },
+  "296": {
+    "indigenous": "pelawat",
+    "indonesian": "menyeberang"
+  },
+  "297": {
+    "indigenous": "nyekapu",
+    "indonesian": "peluk"
+  },
+  "298": {
+    "indigenous": "maju",
+    "indonesian": "panen"
+  },
+  "299": {
+    "indigenous": "batek",
+    "indonesian": "perut"
+  },
+  "300": {
+    "indigenous": "pait",
+    "indonesian": "pahit"
+  },
+  "301": {
+    "indigenous": "pamen",
+    "indonesian": "pintu"
+  },
+  "302": {
+    "indigenous": "sapai",
+    "indonesian": "pakaian"
+  },
+  "303": {
+    "indigenous": "alut",
+    "indonesian": "perahu"
+  },
+  "304": {
+    "indigenous": "mandau",
+    "indonesian": "parang"
+  },
+  "305": {
+    "indigenous": "dadok",
+    "indonesian": "panjang"
+  },
+  "306": {
+    "indigenous": "bu'et",
+    "indonesian": "pendek"
+  },
+  "307": {
+    "indigenous": "sanit",
+    "indonesian": "pedas"
+  },
+  "308": {
+    "indigenous": "tei",
+    "indonesian": "pergi"
+  },
+  "309": {
+    "indigenous": "encam",
+    "indonesian": "pandai"
+  },
+  "310": {
+    "indigenous": "puun",
+    "indonesian": "pohon"
+  },
+  "311": {
+    "indigenous": "menok menawai",
+    "indonesian": "rindu"
+  },
+  "312": {
+    "indigenous": "lekey",
+    "indonesian": "sayur"
+  },
+  "313": {
+    "indigenous": "laki koq",
+    "indonesian": "suami mu"
+  },
+  "314": {
+    "indigenous": "ca bulan",
+    "indonesian": "satu bulan"
+  },
+  "315": {
+    "indigenous": "aha",
+    "indonesian": "setuju"
+  },
+  "316": {
+    "indigenous": "kelumah",
+    "indonesian": "selimut"
+  },
+  "317": {
+    "indigenous": "sio",
+    "indonesian": "benar"
+  },
+  "318": {
+    "indigenous": "ka",
+    "indonesian": "di"
+  },
+  "319": {
+    "indigenous": "ini",
+    "indonesian": "sini"
+  },
+  "320": {
+    "indigenous": "ina",
+    "indonesian": "sana"
+  },
+  "321": {
+    "indigenous": "ina",
+    "indonesian": "situ"
+  },
+  "322": {
+    "indigenous": "kasa",
+    "indonesian": "berlari"
+  },
+  "323": {
+    "indigenous": "meken",
+    "indonesian": "berbaring"
+  },
+  "324": {
+    "indigenous": "nyendei",
+    "indonesian": "bersandar"
+  },
+  "325": {
+    "indigenous": "uyam pula",
+    "indonesian": "berkebun"
+  },
+  "326": {
+    "indigenous": "kenan",
+    "indonesian": "nasi"
+  },
+  "327": {
+    "indigenous": "toke",
+    "indonesian": "pedagang"
+  },
+  "328": {
+    "indigenous": "nange",
+    "indonesian": "nangis"
+  },
+  "329": {
+    "indigenous": "piat",
+    "indonesian": "main"
+  },
+  "330": {
+    "indigenous": "aha",
+    "indonesian": "ya"
+  },
+  "331": {
+    "indigenous": "aang",
+    "indonesian": "antara"
+  },
+  "332": {
+    "indigenous": "aba",
+    "indonesian": "hilir"
+  },
+  "333": {
+    "indigenous": "adet",
+    "indonesian": "peraturan"
+  },
+  "334": {
+    "indigenous": "adi",
+    "indonesian": "kenapa"
+  },
+  "335": {
+    "indigenous": "adi",
+    "indonesian": "mengapa"
+  },
+  "336": {
+    "indigenous": "ading",
+    "indonesian": "kesatu"
+  },
+  "337": {
+    "indigenous": "ading",
+    "indonesian": "dahulu"
+  },
+  "338": {
+    "indigenous": "ading",
+    "indonesian": "terdahulu"
+  },
+  "339": {
+    "indigenous": "ai'",
+    "indonesian": "lalang"
+  },
+  "340": {
+    "indigenous": "ait",
+    "indonesian": "pasir"
+  },
+  "341": {
+    "indigenous": "ajak",
+    "indonesian": "tuntun"
+  },
+  "342": {
+    "indigenous": "ajat",
+    "indonesian": "baris"
+  },
+  "343": {
+    "indigenous": "akang",
+    "indonesian": "keberanian"
+  },
+  "344": {
+    "indigenous": "ngakang",
+    "indonesian": "memberanikan"
+  },
+  "345": {
+    "indigenous": "makang",
+    "indonesian": "berani"
+  },
+  "346": {
+    "indigenous": "aken",
+    "indonesian": "ide"
+  },
+  "347": {
+    "indigenous": "aken",
+    "indonesian": "pikiran"
+  },
+  "348": {
+    "indigenous": "aken",
+    "indonesian": "kebijaksanaan"
+  },
+  "349": {
+    "indigenous": "aking",
+    "indonesian": "pinggang"
+  },
+  "350": {
+    "indigenous": "akit",
+    "indonesian": "rakit"
+  },
+  "351": {
+    "indigenous": "akit",
+    "indonesian": "kapal"
+  },
+  "352": {
+    "indigenous": "makup",
+    "indonesian": "meraup"
+  },
+  "353": {
+    "indigenous": "a'i'",
+    "indonesian": "cupu"
+  },
+  "354": {
+    "indigenous": "a'ung",
+    "indonesian": "jantan"
+  },
+  "355": {
+    "indigenous": "ma'ut",
+    "indonesian": "belukar"
+  },
+  "356": {
+    "indigenous": "ma'ut",
+    "indonesian": "semak"
+  },
+  "357": {
+    "indigenous": "ma'ut",
+    "indonesian": "bersemak"
+  },
+  "358": {
+    "indigenous": "ma'ut",
+    "indonesian": "berumput"
+  },
+  "359": {
+    "indigenous": "ma'ut",
+    "indonesian": "rumput"
+  },
+  "360": {
+    "indigenous": "ala'",
+    "indonesian": "dapat"
+  },
+  "361": {
+    "indigenous": "ala'",
+    "indonesian": "mendapatkan"
+  },
+  "362": {
+    "indigenous": "ala'",
+    "indonesian": "bisa"
+  },
+  "363": {
+    "indigenous": "alan",
+    "indonesian": "ranting"
+  },
+  "364": {
+    "indigenous": "alang",
+    "indonesian": "setengah"
+  },
+  "365": {
+    "indigenous": "alay",
+    "indonesian": "kebiasaan"
+  },
+  "366": {
+    "indigenous": "alay",
+    "indonesian": "lazim"
+  },
+  "367": {
+    "indigenous": "ale",
+    "indonesian": "jalur"
+  },
+  "368": {
+    "indigenous": "aliu",
+    "indonesian": "banding"
+  },
+  "369": {
+    "indigenous": "alo",
+    "indonesian": "arus"
+  },
+  "370": {
+    "indigenous": "alut",
+    "indonesian": "mengukur"
+  },
+  "371": {
+    "indigenous": "mambin",
+    "indonesian": "simpan"
+  },
+  "372": {
+    "indigenous": "mambin",
+    "indonesian": "menyimpan"
+  },
+  "373": {
+    "indigenous": "mambin",
+    "indonesian": "memegang"
+  },
+  "374": {
+    "indigenous": "mambin",
+    "indonesian": "pegang"
+  },
+  "375": {
+    "indigenous": "mambim",
+    "indonesian": "memelihara"
+  },
+  "376": {
+    "indigenous": "pambin",
+    "indonesian": "tersimpan"
+  },
+  "377": {
+    "indigenous": "ambit",
+    "indonesian": "rantai"
+  },
+  "378": {
+    "indigenous": "ameng",
+    "indonesian": "bodoh"
+  },
+  "379": {
+    "indigenous": "ameng",
+    "indonesian": "bisu"
+  },
+  "380": {
+    "indigenous": "amit",
+    "indonesian": "keluarga"
+  },
+  "381": {
+    "indigenous": "amu'",
+    "indonesian": "mungkin"
+  },
+  "382": {
+    "indigenous": "pekanak",
+    "indonesian": "kekanakkanakan"
+  },
+  "383": {
+    "indigenous": "pit",
+    "indonesian": "kembar"
+  },
+  "384": {
+    "indigenous": "aung",
+    "indonesian": "saudara"
+  },
+  "385": {
+    "indigenous": "aung",
+    "indonesian": "saudari"
+  },
+  "386": {
+    "indigenous": "aneng",
+    "indonesian": "menatap"
+  },
+  "387": {
+    "indigenous": "aneng",
+    "indonesian": "tatap"
+  },
+  "388": {
+    "indigenous": "anit",
+    "indonesian": "kulit"
+  },
+  "389": {
+    "indigenous": "anun",
+    "indonesian": "punya"
+  },
+  "390": {
+    "indigenous": "anun",
+    "indonesian": "milik"
+  },
+  "391": {
+    "indigenous": "apat",
+    "indonesian": "rintangan"
+  },
+  "392": {
+    "indigenous": "apat",
+    "indonesian": "aral"
+  },
+  "393": {
+    "indigenous": "apat",
+    "indonesian": "halangan"
+  },
+  "394": {
+    "indigenous": "papat",
+    "indonesian": "terlintang"
+  },
+  "395": {
+    "indigenous": "papat",
+    "indonesian": "tertahan"
+  },
+  "396": {
+    "indigenous": "papat",
+    "indonesian": "terhalang"
+  },
+  "397": {
+    "indigenous": "apaw",
+    "indonesian": "menara"
+  },
+  "398": {
+    "indigenous": "apaw",
+    "indonesian": "penara"
+  },
+  "399": {
+    "indigenous": "apaw",
+    "indonesian": "bukit"
+  },
+  "400": {
+    "indigenous": "apay",
+    "indonesian": "tali"
+  },
+  "401": {
+    "indigenous": "apet",
+    "indonesian": "cacat"
+  },
+  "402": {
+    "indigenous": "apo",
+    "indonesian": "kapur"
+  },
+  "403": {
+    "indigenous": "arep",
+    "indonesian": "tertarik"
+  },
+  "404": {
+    "indigenous": "arep",
+    "indonesian": "berminat"
+  },
+  "405": {
+    "indigenous": "arep",
+    "indonesian": "keinginan"
+  },
+  "406": {
+    "indigenous": "arep",
+    "indonesian": "cenderung"
+  },
+  "407": {
+    "indigenous": "asam",
+    "indonesian": "lahap"
+  },
+  "408": {
+    "indigenous": "asam",
+    "indonesian": "rakus"
+  },
+  "409": {
+    "indigenous": "mundur",
+    "indonesian": "likut"
+  },
+  "410": {
+    "indigenous": "asen",
+    "indonesian": "asal"
+  },
+  "411": {
+    "indigenous": "asep",
+    "indonesian": "jurang"
+  },
+  "412": {
+    "indigenous": "asep",
+    "indonesian": "lembah"
+  },
+  "413": {
+    "indigenous": "ato",
+    "indonesian": "beratus"
+  },
+  "414": {
+    "indigenous": "maung",
+    "indonesian": "meletakkan"
+  },
+  "415": {
+    "indigenous": "maung",
+    "indonesian": "menempatkan"
+  },
+  "416": {
+    "indigenous": "maung",
+    "indonesian": "menaruh"
+  },
+  "417": {
+    "indigenous": "awa'",
+    "indonesian": "andai"
+  }
+}
