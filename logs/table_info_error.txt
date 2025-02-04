@@ -1,0 +1,1 @@
+Table XPath: /[document][1]/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1] - ID: dictionaryTable
