@@ -1,0 +1,6 @@
+numpy
+nltk
+Levenshtein
+transformers
+sentence-transformers
+python-docx
