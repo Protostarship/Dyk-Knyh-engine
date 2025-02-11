@@ -4,3 +4,5 @@ Levenshtein
 transformers
 sentence-transformers
 python-docx
+sentencepiece
+sastrawi
