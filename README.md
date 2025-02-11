@@ -1,164 +1,98 @@
-# Indigenous Translator Engine Documentation
+# 🌍 Indigenous Language Translator Engine 🌿
 
-## Overview
-The Indigenous Translator Engine is a Python-based translation system designed to translate between indigenous languages and other languages (such as Indonesian and English). It employs a hybrid approach combining dictionary-based translation, semantic similarity matching, and example-based translation.
-
-## Key Features
-- Bidirectional translation support (indigenous ↔ Indonesian/English)
-- Hybrid translation approach combining multiple methods
-- Confidence scoring and match rate calculation
-- Report generation in DOCX format
-- Word stemming for improved matching
-- Fuzzy word matching using Levenshtein distance
-
-## Prerequisites
-
-### Required Python Packages
-- `sentence-transformers`
-- `transformers`
-- `python-docx`
-- `numpy`
-- `nltk`
-- `python-Levenshtein`
-
-### Required Files
-- `dictionary.json`: JSON file containing the translation dictionary
-- `examples.docx`: Word document containing example translations
-
-## Technical Architecture
-
-### Model Components
-
-1. **Sentence Transformer**
-   - Model: `paraphrase-multilingual-MiniLM-L12-v2`
-   - Purpose: Generates semantic embeddings for example-based translation
-   - Features: Multilingual support, lightweight architecture
-
-2. **Stemmers**
-   - English: Porter Stemmer from NLTK
-   - Indonesian: Snowball Stemmer from NLTK
-   - Purpose: Reduces words to their root form for improved matching
-
-### Translation Process
-
-The engine follows a multi-step translation process:
-
-1. **Example-based Translation**
-   - Computes semantic similarity between input and known examples
-   - Uses pre-computed embeddings for efficiency
-   - Threshold: 0.8 similarity score for direct example matching
-
-2. **Word-by-word Translation**
-   - Attempts exact dictionary matching
-   - Falls back to stemmed word matching (90% confidence)
-   - Uses Levenshtein distance for fuzzy matching (minimum 60% confidence)
-
-3. **Confidence Calculation**
-   - Aggregates confidence scores across translation methods
-   - Calculates match rate based on successfully translated words
-   - Maximum confidence capped at 90% for word-by-word translation
-
-## Usage
-
-### Initialization
-```python
-translator = IndigenousTranslator('dictionary.json', 'examples.docx')
+```
+ ████████╗███╗   ██╗███████╗███████╗
+ ╚══██╔══╝████╗  ██║██╔════╝██╔════╝
+    ██║   ██╔██╗ ██║█████╗  █████╗  
+    ██║   ██║╚██╗██║██╔══╝  ██╔══╝  
+    ██║   ██║ ╚████║███████╗███████╗
+    ╚═╝   ╚═╝  ╚═══╝╚══════╝╚══════╝
 ```
 
-### Basic Translation
-```python
-input_text = "Your text here"
-source_lang = "id"  # or "en" for English
-translation = translator.translate_sentence(input_text, source_lang)
-```
+## 📌 Overview
+The Indigenous Language Translator Engine is an AI-powered system designed to translate between **Indonesian (ID), English (EN), and Dayak Kenyah (DYK)**. 
+This system efficiently processes and translates text using linguistic insights and intelligent dictionary lookup.
 
-### Generating Reports
-```python
-translator.create_report(input_text, translation, 'translation_report.docx')
-```
+## 🚀 Key Features
+✅ **Optimized Multi-Step Translation Flow**  
+✅ **Basic Stemming Instead of Complex Lemmatization**  
+✅ **Dictionary-Based Lookup for Efficient Translation**  
+✅ **Automated Confidence Scoring**  
+✅ **Detailed DOCX Report Generation**  
+✅ **Support for Manual Input and File Uploads**  
 
-## Dictionary Format
-The `dictionary.json` file should follow this structure:
+## 🔄 Translation Pipeline Breakdown
+The translation process follows a **structured multi-step pipeline**:
+
+### 1️⃣ **Preprocessing**
+   - Convert input text to lowercase
+   - Apply stemming (for Indonesian words)
+   - Tokenize words for dictionary lookup
+
+### 2️⃣ **Translation Flow & Intermediary Conversion**
+   - **ID → DYK**: Direct dictionary lookup with preprocessing
+   - **EN → DYK**: Convert EN → ID first, then process as ID → DYK
+   - **DYK → ID**: Direct dictionary mapping
+   - **DYK → EN**: Convert DYK → ID first, then process ID → EN
+
+### 3️⃣ **Dictionary Lookup & Matching**
+   - Exact match search in the dictionary
+   - Stemmed word lookup for better accuracy
+   - If no direct match, apply **Levenshtein Distance** for closest word matching
+
+### 4️⃣ **Translation Confidence Calculation**
+   - **1.0** → Exact dictionary match
+   - **0.9** → Stemmed match found
+   - **0.6 - 0.8** → Closest match using Levenshtein distance
+   - **0.0 - 0.5** → No reliable match found, fallback to original word
+
+### 5️⃣ **Final Processing & Output Generation**
+   - Assemble translated words into a coherent sentence
+   - Append metadata (match rate, confidence score, etc.)
+   - Generate structured **DOCX Report**
+
+## 📜 How to Use
+### Input Options
+🔹 **Manual Input**: Type text directly into the CLI.  
+🔹 **File Upload**: Provide a file path to process large texts.  
+
+### Running the Translator
+1️⃣ Ensure `dictionary.json` is properly formatted.
+2️⃣ Run the script:  
+   ```sh
+   python translator.py
+   ```
+3️⃣ Select input type (`file` or `text`).
+4️⃣ Provide the **source language** and **target language**.
+5️⃣ Receive **translation output** and **DOCX report**.
+
+## 📂 Managing the Dictionary
+The translation relies on a **JSON dictionary** stored in the format:
 ```json
 {
-    "word": {
-        "indigenous": "indigenous_translation",
-        "en": "english_translation",
-        "id": "indonesian_translation"
-    }
+    "makan": "ngakan",
+    "minum": "nyuip"
 }
 ```
+### Adding New Words
+📌 **Ensure lowercase formatting** for better accuracy.
+📌 **Use precise and validated indigenous translations**.
 
-## Examples Document Format
-The `examples.docx` file should contain example translations separated by `||`:
-```
-Original text || Translation
-```
+## 📑 Report Structure
+The generated **DOCX Report** includes:
+- 📌 **Header**: Performance Score, Translation Rate, and Confidence.
+- 📜 **Body**: Only the translation results.
+- 🔻 **Footer**: Translation origin, original and target word counts.
 
-## Performance Metrics
+## 🛠 Future Enhancements
+🔹 **Context-Aware Translations**: Improve sentence-level understanding.  
+🔹 **GUI Interface**: Introduce a user-friendly graphical interface.  
+🔹 **Expanded Dictionary**: Collaborate with native speakers to refine accuracy.  
 
-### Confidence Score
-- Range: 0.0 to 1.0
-- Factors:
-  - Exact match: 1.0
-  - Stemmed match: 0.9
-  - Fuzzy match: Based on Levenshtein distance
-  - Example match: Based on semantic similarity
+## 🎯 Conclusion
+The **Indigenous Language Translator Engine** is a robust, scalable, and efficient tool that simplifies translation between **Indonesian, English, and Dayak Kenyah**. By leveraging dictionary-based lookup, intelligent preprocessing, and structured reporting, it ensures high accuracy while maintaining **low performance impact**.
 
-### Match Rate
-- Calculation: (Matched words) / (Total words)
-- Threshold for matched words: > 0.6 confidence
+---
+🔗 **Developed for Indigenous Language Preservation** 🌍💡
 
-## Best Practices
-
-1. **Dictionary Maintenance**
-   - Keep dictionary entries in lowercase
-   - Ensure consistency in translations
-   - Regular updates with new vocabulary
-
-2. **Example Management**
-   - Include diverse example sentences
-   - Focus on common phrases and idioms
-   - Maintain clear separation with `||` delimiter
-
-3. **Performance Optimization**
-   - Pre-compute embeddings for examples
-   - Use appropriate stemming based on source language
-   - Implement caching for frequently translated phrases
-
-## Limitations
-
-1. **Translation Accuracy**
-   - Limited by dictionary completeness
-   - Dependent on example quality
-   - May struggle with complex grammar structures
-
-2. **Performance Considerations**
-   - Initial loading time due to model loading
-   - Memory usage with large example sets
-   - Computation time for semantic similarity
-
-3. **Language Support**
-   - Currently limited to English and Indonesian as source languages
-   - Requires separate stemmer implementation for additional languages
-
-## Future Improvements
-
-1. **Enhanced Features**
-   - Grammar rule implementation
-   - Context-aware translation
-   - Additional language support
-   - Automated dictionary updates
-
-2. **Technical Optimizations**
-   - Improved caching mechanisms
-   - Parallel processing for batch translations
-   - Memory optimization for large-scale use
-
-## Support
-
-For issues and improvements, please:
-1. Check the dictionary format
-2. Verify example document structure
-3. Ensure all dependencies are correctly installed
-4. Monitor confidence scores for unexpected results
+**📌 Engine Production by XI TJKT 2  |  Any use of this tool for one's own gain is strictly prohibited 📜**
