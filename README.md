@@ -58,14 +58,14 @@ The translation process follows a **structured multi-step pipeline**:
 🔹 **File Upload**: Provide a file path to process large texts.  
 
 ### Running the Translator
-1️⃣ Ensure `dictionary.json` is properly formatted.
-2️⃣ Run the script:  
+#### 1️⃣ Ensure `dictionary.json` is properly formatted.
+#### 2️⃣ Run the script:  
    ```sh
    python translator.py
    ```
-3️⃣ Select input type (`file` or `text`).
-4️⃣ Provide the **source language** and **target language**.
-5️⃣ Receive **translation output** and **DOCX report**.
+#### 3️⃣ Select input type (`file` or `text`).
+#### 4️⃣ Provide the **source language** and **target language**.
+#### 5️⃣ Receive **translation output** and **DOCX report**.
 
 ## 📂 Managing the Dictionary
 The translation relies on a **JSON dictionary** stored in the format:
