@@ -1,4 +1,0 @@
-Root: /[document][1]/html[1]
-Table 0 XPath: /[document][1]/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1] - ID: dictionaryTable
-Chosen Table XPath: /[document][1]/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/table[1]
-No rows with 'data-index' attribute found. Falling back to <tr> elements within tbody.
