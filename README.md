@@ -76,8 +76,8 @@ The translation relies on a **JSON dictionary** stored in the format:
 }
 ```
 ### Adding New Words
-📌 **Ensure lowercase formatting** for better accuracy.
-📌 **Use precise and validated indigenous translations**.
+#### 📌 **Ensure lowercase formatting** for better accuracy.
+#### 📌 **Use precise and validated indigenous translations**.
 
 ## 📑 Report Structure
 The generated **DOCX Report** includes:
