@@ -95,4 +95,4 @@ The **Indigenous Language Translator Engine** is a robust, scalable, and efficie
 ---
 🔗 **Developed for Indigenous Language Preservation** 🌍💡
 
-**📌 Engine Production by XI TJKT 2  |  Any use of this tool for one's own gain is strictly prohibited 📜**
+**📌 Translator Developed by XI TJKT 2  |  Any use of this tool for one's own gain is strictly prohibited 📜**
