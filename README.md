@@ -1,4 +1,4 @@
-# 🌍 Indigenous Language Translator Engine 🌿
+# 🌍 Indigenous Language Translator Engine (ILTE) 🌿
 
 ```
  ██╗██╗     ████████╗███████╗
@@ -11,81 +11,74 @@
 ```
 
 ## 📌 Overview
-The Indigenous Language Translator Engine is an AI-powered system designed to translate between **Indonesian (ID), English (EN), and Dayak Kenyah (DYK)** using **Sastrawi Stemmer for Indonesian**, **Snowball Stemmer for English**, and **optimized dictionary-based lookup**.
+The Indigenous Language Translator Engine (ILTE) offers **two distinct versions** to cater to different user needs:
 
-## 🚀 Key Features (v1.0.0)
-### ✅ **Optimized Multi-Step Translation Flow** (EN ↔ ID ↔ DYK)  
-### ✅ **Dual Stemming Support** – **Sastrawi Stemmer** (ID) & **Snowball Stemmer** (EN)  
-### ✅ **Dictionary-Based Lookup for Efficient Translation**  
-### ✅ **Levenshtein Distance Approximation for Closest Matches**  
-### ✅ **Automated Confidence Scoring & Translation Accuracy Calculation**  
-### ✅ **DOCX Report Generation with Structured Headers & Footers**  
-### ✅ **Support for Manual Text Input and File-Based Translations**  
+- **🌱 ILTE-ALT (Beta Release)** – A lightweight, efficient translation engine focused on **basic dictionary-based** translations.
+- **🧠 ILTE-ADV (Alpha Release)** – An advanced version that leverages **AI-driven context-awareness and semantic matching** for smarter translations.
 
-## 🖥️ System Requirements
-To ensure smooth operation of ILTE, the following system requirements are recommended:
+## 🚀 Key Features
+### **ILTE-ALT (Beta) - Lightweight & Efficient**
+- ✅ **Basic Stemming for ID & EN** (Sastrawi for ID, Snowball for EN)  
+- ✅ **Dictionary-Based Lookup** for direct and closest matches  
+- ✅ **Levenshtein Distance** for fuzzy matching  
+- ✅ **Automated Confidence Scoring**  
+- ✅ **Structured DOCX Report Generation**  
+- ✅ **Low Memory Usage** – Ideal for lower-end machines  
 
-### 🔹 **Minimum Requirements**
-- **CPU**: Intel Core i3 (4th Gen) / AMD Ryzen 3
-- **RAM**: 4GB
-- **Storage**: 500MB free disk space
-- **OS**: Windows 10, macOS 10.13+, or Ubuntu 18.04+
-- **Python Version**: 3.8+
-- **Internet**: Required for downloading NLP models
+### **ILTE-ADV (Alpha) - Smart & Context-Aware**
+- 🧠 **Contextual Translation with IndoBERT & Sentence Transformers**  
+- 🔎 **Zero-Shot Learning for Unknown Words**  
+- 📖 **Pattern-Based Learning** – Adapts to text structures  
+- 🔄 **Semantic Similarity Matching** – Finds best translations beyond dictionary  
+- 📊 **Enhanced Translation Confidence Metrics**  
+- ⚡ **Requires Higher Memory & Processing Power** – Ideal for researchers and professionals  
 
-### 🔹 **Recommended Requirements**
-- **CPU**: Intel Core i5 (8th Gen) / AMD Ryzen 5 or higher
-- **RAM**: 8GB or higher (for better translation speed)
-- **Storage**: 1GB free disk space
-- **OS**: Windows 11, macOS 12+, or Ubuntu 20.04+
-- **Python Version**: 3.10+
-- **Internet**: Required for downloading and updating NLP models
+## 🔄 Translation Pipeline Breakdown
+### **1️⃣ Preprocessing**
+- **ALT**: Converts text to lowercase, applies stemming, tokenizes words.
+- **ADV**: Performs **context-aware tokenization, embedding generation, and text structure analysis**.
 
-## 🔄 Translation Process Breakdown
-The translation process follows a **structured multi-step pipeline**:
+### **2️⃣ Translation Flow & Processing**
+#### **ILTE-ALT (Beta)**
+- **ID → DYK**: Basic dictionary lookup with stemming.
+- **EN → DYK**: Converts **EN → ID** first, then **ID → DYK**.
+- **DYK → EN**: Converts **DYK → ID** first, then **ID → EN**.
 
-### 1️⃣ **Preprocessing**
-   - Convert input text to lowercase.
-   - Apply **Sastrawi Stemmer** for Indonesian words.
-   - Apply **Snowball Stemmer** for English words.
-   - Tokenize words for dictionary lookup.
+#### **ILTE-ADV (Alpha)**
+- **ID → DYK**: Uses **contextual embeddings** & **semantic matching**.
+- **EN → DYK**: Uses **AI-driven conversion pipelines**.
+- **DYK → EN**: Adapts to **sentence structures and known translation patterns**.
 
-### 2️⃣ **Translation Flow & Processing**
-   - **ID → DYK**: Stem text, perform dictionary lookup, apply closest match if needed.
-   - **EN → DYK**: Convert EN → ID first, then process ID → DYK.
-   - **DYK → ID**: Direct dictionary mapping with closest match handling.
-   - **DYK → EN**: Convert DYK → ID first, then process ID → EN.
+### **3️⃣ Dictionary Lookup & Matching**
+- **ALT**: Exact match → Stemmed match → Levenshtein Distance.
+- **ADV**: **Semantic Similarity** → **Pattern Recognition** → **AI-Based Contextual Matching**.
 
-### 3️⃣ **Dictionary Lookup & Matching**
-   - **Exact match search** in the dictionary.
-   - **Stemmed word lookup** for improved accuracy.
-   - **Levenshtein Distance Approximation** for closest word matching.
+### **4️⃣ Translation Confidence Calculation**
+- **ALT**: Based on dictionary and fuzzy matching.
+- **ADV**: Integrates **contextual confidence scoring, IndoBERT embeddings, and AI classifiers**.
 
-### 4️⃣ **Translation Confidence Calculation**
-   - **1.0** → Exact dictionary match.
-   - **0.9** → Stemmed match found.
-   - **0.6 - 0.8** → Closest match using Levenshtein distance.
-   - **0.0 - 0.5** → No reliable match found, fallback to original word.
-
-### 5️⃣ **Final Processing & Output Generation**
-   - Assemble translated words into a structured format.
-   - Append metadata (match rate, confidence score, and translation accuracy).
-   - Generate structured **DOCX Report**.
+### **5️⃣ Final Processing & Output Generation**
+- **Both versions generate structured DOCX reports**.
+- **ADV additionally tracks pattern memory & learning rates**.
 
 ## 📜 How to Use
-### Input Options
+### **Choose a Version Based on Your Needs**
+#### 1️⃣ **Use ILTE-ALT (Beta) for lightweight, fast translations with minimal system requirements.**  
+#### 2️⃣ **Use ILTE-ADV (Alpha) for smarter, AI-powered translations that improve over time.**  
+
+### **Running ILTE-ALT (Beta) – Fast & Simple**
+```sh
+python engine_ALT.py
+```
+
+### **Running ILTE-ADV (Alpha) – AI-Enhanced**
+```sh
+python engine_ADV.py
+```
+
+### **Selecting Input Type**
 🔹 **Manual Input**: Type text directly into the CLI.  
 🔹 **File Upload**: Provide a file path for bulk translation.  
-
-### Running the Translator
-#### 1️⃣ Ensure `dictionary.json` is properly formatted.
-#### 2️⃣ Run the script:  
-   ```sh
-   python engine_alt.py
-   ```
-#### 3️⃣ Select input type (`file` or `text`).
-#### 4️⃣ Provide the **source language** and **target language**.
-#### 5️⃣ Receive **translation output** and **DOCX report**.
 
 ## 📂 Managing the Dictionary
 The translation relies on a **JSON dictionary** stored in the format:
@@ -96,8 +89,8 @@ The translation relies on a **JSON dictionary** stored in the format:
 }
 ```
 ### Adding New Words
-📌 **Ensure lowercase formatting** for better accuracy.  
-📌 **Use precise and validated indigenous translations**.  
+#### 📌 **Ensure lowercase formatting** for better accuracy.  
+#### 📌 **Use precise and validated indigenous translations**.  
 
 ## 📑 Report Structure
 The generated **DOCX Report** includes:
@@ -105,17 +98,35 @@ The generated **DOCX Report** includes:
 - 📜 **Body**: Only the translation results.
 - 🔻 **Footer**: Translation origin, original and target word counts.
 
+## 🖥️ System Requirements
+### **ILTE-ALT (Beta) - Minimal System Impact**
+- **CPU**: Intel Core i3 / AMD Ryzen 3  
+- **RAM**: 4GB+  
+- **Storage**: 500MB free space  
+- **Python**: 3.8+  
+
+### **ILTE-ADV (Alpha) - AI-Powered, Requires More Resources**
+- **CPU**: Intel Core i5 / AMD Ryzen 5  
+- **RAM**: 8GB+ (16GB Recommended)  
+- **Storage**: 1GB+ free space  
+- **Python**: 3.10+  
+- **GPU Acceleration (Optional, but Recommended)**  
+
 ## 🛠 Future Enhancements
-🔹 **Context-Aware Translations**: Improve sentence-level understanding.  
-🔹 **GUI Interface**: Introduce a user-friendly graphical interface.  
-🔹 **Expanded Dictionary**: Crowdsourcing indigenous language data.  
+###🔹 **ALT**: Additional optimization for better performance.  
+###🔹 **ADV**: Improved AI logic, better zero-shot classification, enhanced pattern learning.  
 
 ## 🎯 Conclusion
-The **Indigenous Language Translator Engine** v1.0.0 is an advanced yet lightweight translation tool designed for **linguists, educators, and researchers**. With **dual stemming techniques, intelligent dictionary lookups, and structured reporting**, ILTE ensures **high accuracy while maintaining low performance impact**.  
+The **Indigenous Language Translator Engine** (ILTE) now offers two pathways:  
+- **ILTE-ALT**: A simple, dictionary-based translator for fast and effective results.  
+- **ILTE-ADV**: A powerful AI-driven translator that continuously learns and improves.  
+
+Choose the version that best suits your needs, and contribute to the development of **indigenous language preservation**. 🚀  
 
 ---
 🔗 **Developed for Indigenous Language Preservation** 🌍💡  
 📜 **Licensed under GPL v3 – Any use of this tool for one's own gain is strictly prohibited** 🔥
+
 
 
 **📌 Translator Developed by XI TJKT 2  |  Any use of this tool for one's own gain is strictly prohibited 📜**
