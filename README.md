@@ -113,8 +113,8 @@ The generated **DOCX Report** includes:
 - **GPU Acceleration (Optional, but Recommended)**  
 
 ## 🛠 Future Enhancements
-###🔹 **ALT**: Additional optimization for better performance.  
-###🔹 **ADV**: Improved AI logic, better zero-shot classification, enhanced pattern learning.  
+### 🔹 **ALT**: Additional optimization for better performance.  
+### 🔹 **ADV**: Improved AI logic, better zero-shot classification, enhanced pattern learning.  
 
 ## 🎯 Conclusion
 The **Indigenous Language Translator Engine** (ILTE) now offers two pathways:  
