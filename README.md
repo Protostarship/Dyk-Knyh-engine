@@ -143,7 +143,7 @@ Choose the version that best suits your needs and contribute to **indigenous lan
 📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited.  
 
 📌 **Note from XI TJKT 2 Development Team** 
-💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
+- 💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
 
 
 __**"Never takes advantages of others just for your own gains."**__
