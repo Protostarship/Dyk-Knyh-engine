@@ -1,93 +1,9 @@
-# 🌍 Indigenous Language Translator Engine (ILTE) 🌿
----
-```
-Release:
-- v2.1.0-Beta.2 ALT
-- v2.1.1-Alpha.2 ADV
-```
----
-```
- ██╗  ██╗     ████████╗ ███████╗
- ██║  ██║     ╚══██╔══╝ ██╔════╝
- ██║  ██║        ██║    ███████╗  
- ██║  ██║        ██║    ██╔════╝  
- ██║  ███████╗   ██║    ███████╗
- ╚═╝  ╚══════╝   ╚═╝    ╚══════╝
- -------------------------------
- ILTE - Indigenous Language Translator Engine
-```
+# 🌍 Indigenous Language Translator Engine (ILTE) 🌿  
+### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
 
-## 📌 Overview
-The **Indigenous Language Translator Engine (ILTE)** offers **two distinct versions** designed for different levels of translation complexity:
-
-- **🌱 ILTE-ALT (Optimized for Speed)** – A lightweight, dictionary-based translator optimized for **fast, low-resource translations**.
-- **🧠 ILTE-ADV (AI-Powered, Context-Aware)** – An advanced, AI-driven translation engine that integrates **context awareness, semantic similarity, and zero-shot learning**.
-
-## ✨ Key Features
-### **ILTE-ALT - Simple, Fast & Efficient**
-- ✅ **Dictionary-Based Lookup** for direct translations.
-- ✅ **Basic Stemming for Indonesian (ID) & English (EN)**.
-- ✅ **Levenshtein Distance Matching** for closest word lookup.
-- ✅ **Automated Confidence Scoring** for accuracy estimation.
-- ✅ **Structured DOCX Report Generation**.
-- ✅ **Low Memory Usage** – Optimized for lower-end machines.
-
-### **ILTE-ADV - AI-Powered, Context-Aware & Smarter**
-- 🧠 **Contextual Translation using IndoBERT & Sentence Transformers**.
-- 🔍 **Zero-Shot Learning for Handling Unknown Words**.
-- 📖 **Pattern-Based Learning & Semantic Matching**.
-- 🔄 **Enhanced Translation Confidence Metrics**.
-- ⚡ **Leverages GPU Acceleration for Faster Processing**.
-
-## ⚛ Models Used in Each Version
-
-### **🌱 ILTE-ALT (Dictionary-Based)**
-| Feature | Model Used |
-|---------|-----------|
-| **Translation (ID-EN, EN-ID)** | `Helsinki-NLP/opus-mt-id-en`, `Helsinki-NLP/opus-mt-en-id` |
-| **Stemming** | `Sastrawi` (Indonesian), `SnowballStemmer` (English) |
-| **Fuzzy Matching** | `Levenshtein Distance` |
-
-### **🧠 ILTE-ADV (AI-Powered)**
-| Feature | Model Used |
-|---------|-----------|
-| **Contextual Embeddings** | `cahya/bert-base-indonesian-1.5G` |
-| **Semantic Matching** | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
-| **Zero-Shot Classification** | `typeform/distilbert-base-uncased-mnli` |
-| **Translation (ID-EN, EN-ID)** | `Helsinki-NLP/opus-mt-id-en`, `Helsinki-NLP/opus-mt-en-id` |
-
-## 🔄 Translation Flow Breakdown
-### **1️⃣ Preprocessing**
-- **ALT:** Lowercasing, stemming, tokenization.
-- **ADV:** Context-aware tokenization, embedding generation, and sentence structure analysis.
-
-### **2️⃣ Translation Flow & Processing**
-#### **ILTE-ALT (Fast Dictionary-Based Approach)**
-- **ID → DYK**: Direct dictionary lookup.
-- **EN → DYK**: Converts **EN → ID**, then **ID → DYK**.
-- **DYK → EN**: Converts **DYK → ID**, then **ID → EN**.
-
-#### **ILTE-ADV (AI-Powered Context-Aware Approach)**
-- **ID → DYK**: Uses **contextual embeddings** & **semantic matching**.
-- **EN → DYK**: Uses **zero-shot classification + IndoBERT embeddings**.
-- **DYK → EN**: Adapts to **sentence structures & known translation patterns**.
-
-### **3️⃣ Dictionary Lookup & Matching**
-- **ALT:** Exact match ➔ Stemmed match ➔ Levenshtein Distance.
-- **ADV:** **Semantic Similarity ➔ Contextual Matching ➔ Pattern Recognition**.
-
-### **4️⃣ Confidence Calculation**
-- **ALT:** Based on dictionary and fuzzy matching.
-- **ADV:** Uses **contextual confidence scoring, IndoBERT embeddings, and AI classifiers**.
-
-### **5️⃣ Output Generation**
-- **Both versions generate structured DOCX reports**.
-- **ADV additionally tracks pattern memory & learning rates**.
-
-## 📂 How to Use
-### **Choose a Version Based on Your Needs**
-#### ✔️ Use **ILTE-ALT** for lightweight, dictionary-based translations.
-#### ✔️ Use **ILTE-ADV** for AI-powered, context-aware translations.
+## ✔️ Feature Overview
+**ILTE-ADV** - Advanced AI-powered translations with contextual understanding  
+**ILTE-ALT** - Lightweight version for basic translation needs
 
 ### **Running ILTE-ALT (Simple Mode)**
 ```sh
@@ -108,8 +24,8 @@ python engine_ADV.py
 - Format:
 ```json
 {
-  "apa"   : "inu",
-  "kemana": "kenpi"
+"apa" : "inu",
+"kemana": "kenpi"
 }
 ```
 
@@ -141,14 +57,30 @@ The **DOCX Report** includes:
 ### 🔹 **ALT:** Optimize performance, add basic semantic matching.
 ### 🔹 **ADV:** Improve AI logic, better zero-shot classification.
 
+# 🔮 Roadmap
+- ILTE-ALT
+Performance optimization
+
+Basic semantic pattern matching
+
+Multi-thread processing
+
+- ILTE-ADV
+Enhanced AI classification
+
+Neural network improvements
+
+Cross-language transfer learning
+
 ## 🏆 Conclusion
-Choose the version that best suits your needs and contribute to **indigenous language preservation**. 🚀  
+Choose the version that best suits your needs and contribute to **indigenous language preservation**. 🚀 
 
 ---
-🔗 **Developed for Indigenous Language Preservation** 🌍💡  
-📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited.  
+🔗 **Developed for Indigenous Language Preservation** 🌍💡 
+📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited. 
 ---
-📌 **Note from XI TJKT 2 Development Team** 
+# 📌 🤝Contribute | 📧 Contact Team | 🌐 Cultural Partners
 - 💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
 ---
 __🏆 Keep It Going 🤝__
+
