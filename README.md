@@ -146,4 +146,4 @@ Choose the version that best suits your needs and contribute to **indigenous lan
 - 💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
 
 
-__**"Never takes advantages of others just for your own gains."**__
+__🏆 Keep It Going 🤝__
