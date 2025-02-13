@@ -1,8 +1,10 @@
 # 🌍 Indigenous Language Translator Engine (ILTE) 🌿
+
 ---
-### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
+##### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
 ---
----
+
+
 ```
 Release:
 - v2.1.0-Beta.2 ALT
@@ -19,6 +21,7 @@ Release:
  -------------------------------
  ILTE - Indigenous Language Translator Engine
 ```
+
 
 ## 📌 Overview
 The **Indigenous Language Translator Engine (ILTE)** offers **two distinct versions** designed for different levels of translation complexity:
