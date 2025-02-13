@@ -1,6 +1,7 @@
-# 🌍 Indigenous Language Translator Engine (ILTE) 🌿  
+# 🌍 Indigenous Language Translator Engine (ILTE) 🌿
+---
 ### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
-
+---
 ---
 ```
 Release:
@@ -88,8 +89,8 @@ The **Indigenous Language Translator Engine (ILTE)** offers **two distinct versi
 
 ## 📂 How to Use
 ### **Choose a Version Based on Your Needs**
-#### ✔️ Use **ILTE-ALT** for lightweight, dictionary-based translations.
-#### ✔️ Use **ILTE-ADV** for AI-powered, context-aware translations.
+- ✔️ Use **ILTE-ALT** for lightweight, dictionary-based translations.
+- ✔️ Use **ILTE-ADV** for AI-powered, context-aware translations.
 
 # 🔮 Roadmap
 ILTE-ALT
@@ -117,8 +118,8 @@ python engine_ADV.py
 ```
 
 ### **Selecting Input Type**
-👉 **Manual Input**: Type text directly into the CLI.
-👉 **File Upload**: Provide a file path for batch translation.
+- 👉 **Manual Input**: Type text directly into the CLI.
+- 👉 **File Upload**: Provide a file path for batch translation.
 
 ## 📁 Managing the Dictionary
 - The dictionary is stored in **JSON format**.
@@ -131,8 +132,8 @@ python engine_ADV.py
 ```
 
 ### Adding New Words
-#### 📌 **Ensure lowercase formatting**.
-#### 📌 **Use precise and validated indigenous translations**.
+- 📌 **Ensure lowercase formatting**.
+- 📌 **Use precise and validated indigenous translations**.
 
 ## 📚 Report Structure
 The **DOCX Report** includes:
@@ -155,21 +156,22 @@ The **DOCX Report** includes:
 - **GPU Acceleration (Recommended)**
 
 ## 🛠 Future Enhancements
-### 🔹 **ALT:** Optimize performance, add basic semantic matching.
-### 🔹 **ADV:** Improve AI logic, better zero-shot classification.
+- 🔹 **ALT:** Optimize performance, add basic semantic matching.
+- 🔹 **ADV:** Improve AI logic, better zero-shot classification.
 
 ## 🏆 Conclusion
 Choose the version that best suits your needs and contribute to **indigenous language preservation**. 🚀  
 
 ---
 🔗 **Developed for Indigenous Language Preservation** 🌍💡  
-📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited.  
+📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited. 
+
 ---
+
 # 🌱 Preservation Initiative
 Choose your suitable version and join our mission to protect linguistic heritage through ethical technology. 📜✨
 
 # 🤝 Contribute | 📧 Contact Team | 🌐 Cultural Partners
 
-- 💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
 ---
 __🏆 Keep It Going 🤝__
