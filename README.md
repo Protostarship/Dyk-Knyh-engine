@@ -1,7 +1,10 @@
 # 🌍 Indigenous Language Translator Engine (ILTE) 🌿
 
+```
+Release:
 - v2.1.0-Beta.2 ALT
 - v2.1.1-Alpha.2 ADV
+```
 
 ```
  ██╗  ██╗     ████████╗ ███████╗
