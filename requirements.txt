@@ -1,22 +1,25 @@
-# Core NLP and ML libraries
+# Core ML and Deep Learning
 torch>=2.0.0
 transformers>=4.30.0
 sentence-transformers>=2.2.2
+bitsandbytes>=0.45.2
+
+# NLP Libraries
 nltk>=3.8.1
 Sastrawi>=1.0.1
-
-# Text processing
 python-Levenshtein>=0.21.0
-numpy>=1.24.0
 
-# Document handling
+# Data Processing
+numpy>=1.24.0
+chardet>=5.0.0
+
+# Document Handling
 python-docx>=0.8.11
 
-# Optional but recommended for better performance
+# Performance and Progress
 tqdm>=4.65.0
-scikit-learn>=1.2.0
 
-# Additional dependencies for the translation models
+# Translation Model Dependencies
 sacremoses>=0.0.53
 sentencepiece>=0.1.99
 protobuf>=3.20.0

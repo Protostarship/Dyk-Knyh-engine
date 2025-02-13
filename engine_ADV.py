@@ -1,182 +1,212 @@
 import json
+import gc
 import numpy as np
+import chardet
+import re
 from Levenshtein import distance as lev_distance
 from nltk.stem import SnowballStemmer
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from transformers import (
     pipeline,
     AutoTokenizer,
-    AutoModel,
-    AutoModelForSequenceClassification
+    AutoModelForMaskedLM
 )
 from sentence_transformers import SentenceTransformer
 import torch
+from torch.utils.data import DataLoader, Dataset
 from docx import Document
 import os
 from collections import defaultdict
+from tqdm import tqdm
+from typing import List, Tuple, Dict
 
-class EnhancedIndigenousTranslator:
-    def __init__(self, json_path):
-        # Load base components
+def sanitize_text(text: str) -> str:
+    """
+    Remove control characters and other XML-incompatible characters.
+    """
+    # Remove characters in ranges: U+0000-U+0008, U+000B-U+000C, U+000E-U+001F
+    return re.sub(r'[\x00-\x08\x0B-\x0C\x0E-\x1F]', '', text)
+
+class TextBatchDataset(Dataset):
+    def __init__(self, texts: List[str], window_size: int = 3):
+        self.texts = texts
+        self.window_size = window_size
+        self.windows = self._create_windows()
+        
+    def _create_windows(self):
+        windows = []
+        for text in self.texts:
+            words = text.split()
+            for i in range(len(words)):
+                window = words[max(0, i-self.window_size):min(len(words), i+self.window_size+1)]
+                windows.append((" ".join(window), words[i]))
+        return windows
+    
+    def __len__(self):
+        return len(self.windows)
+        
+    def __getitem__(self, idx):
+        return self.windows[idx]
+
+class OptimizedIndigenousTranslator:
+    def __init__(self, json_path, batch_size=32):
+        # Load dictionary and initialize stemmers
         self.dictionary = self.load_json(json_path)
+        self.batch_size = batch_size
         factory = StemmerFactory()
         self.id_stemmer = factory.create_stemmer()
         self.en_stemmer = SnowballStemmer("english")
         
-        # Initialize translation models
+        # Optimization config for translation pipelines
+        self.optimization_config_translation = {
+            "torch_dtype": torch.float16,
+            "load_in_8bit": True,
+            "max_memory": {"cuda:0": "3.5GB"}
+        }
+        
+        # General optimization config for other models (excluding zero-shot classifier)
+        self.optimization_config = {
+            "torch_dtype": torch.float16,
+            "device_map": "auto",
+            "load_in_8bit": True,
+            "max_memory": {"cuda:0": "3.5GB"}
+        }
+        
+        # Separate optimization config for zero-shot classifier (without device_map)
+        self.optimization_config_zero_shot = {
+            "torch_dtype": torch.float16,
+            "load_in_8bit": True,
+            "max_memory": {"cuda:0": "3.5GB"}
+        }
+        
+        # Initialize translation pipelines
+        print("Loading translation models...")
         self.en_id_translator = pipeline(
-            "translation_en_to_id", model="Helsinki-NLP/opus-mt-en-id"
+            "translation_en_to_id",
+            model="Helsinki-NLP/opus-mt-en-id",
+            tokenizer="Helsinki-NLP/opus-mt-en-id",
+            **self.optimization_config_translation
         )
         self.id_en_translator = pipeline(
-            "translation_id_to_en", model="Helsinki-NLP/opus-mt-id-en"
+            "translation_id_to_en",
+            model="Helsinki-NLP/opus-mt-id-en",
+            tokenizer="Helsinki-NLP/opus-mt-id-en",
+            **self.optimization_config_translation
         )
         
-        # Initialize Indonesian BERT for context understanding
-        self.tokenizer = AutoTokenizer.from_pretrained("indolem/indobert-base-uncased")
-        self.context_model = AutoModel.from_pretrained("indolem/indobert-base-uncased")
+        # Load Indonesian BERT without extra device_map (use as is)
+        print("Loading BERT model...")
+        self.tokenizer = AutoTokenizer.from_pretrained("cahya/bert-base-indonesian-1.5G")
+        self.context_model = AutoModelForMaskedLM.from_pretrained(
+            "cahya/bert-base-indonesian-1.5G",
+            torch_dtype=torch.float16
+        )
+        if torch.cuda.is_available():
+            self.context_model.to("cuda")
         
-        # Initialize sentence transformer for semantic similarity
-        self.sentence_model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
+        # Initialize SentenceTransformer
+        print("Loading SentenceTransformer...")
+        self.sentence_model = SentenceTransformer(
+            'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2',
+            device='cuda' if torch.cuda.is_available() else 'cpu'
+        )
+        
+        # Precompute dictionary embeddings
+        print("Computing dictionary embeddings...")
+        self.dict_words = list(self.dictionary.keys())
+        if self.dict_words:
+            self.dict_embeddings = self.sentence_model.encode(
+                self.dict_words,
+                batch_size=self.batch_size,
+                convert_to_numpy=True,
+                show_progress_bar=True
+            )
+        else:
+            self.dict_embeddings = np.array([])
         
         # Initialize zero-shot classifier
+        print("Loading zero-shot classifier...")
         self.zero_shot = pipeline(
             "zero-shot-classification",
-            model="joeddav/xlm-roberta-large-xnli"
+            model="typeform/distilbert-base-uncased-mnli",
+            tokenizer="typeform/distilbert-base-uncased-mnli",
+            **self.optimization_config_zero_shot
         )
         
         # Translation tracking
-        self.confidence = 1.0
         self.translations = []
         self.pattern_memory = defaultdict(dict)
         self.context_cache = {}
+        print("Initialization complete!")
+        
+    @staticmethod
+    def detect_encoding(file_path):
+        """Detect file encoding using chardet."""
+        with open(file_path, "rb") as f:
+            raw_data = f.read(1024)
+        result = chardet.detect(raw_data)
+        return result.get("encoding")
         
     def load_json(self, path):
         with open(path, "r") as f:
             return json.load(f)
             
-    def get_contextual_embedding(self, text):
-        """Get contextual embedding using IndoBERT."""
-        if text in self.context_cache:
-            return self.context_cache[text]
-            
-        inputs = self.tokenizer(text, return_tensors="pt", padding=True, truncation=True)
-        with torch.no_grad():
-            outputs = self.context_model(**inputs)
-        embedding = outputs.last_hidden_state.mean(dim=1).numpy()[0]
-        self.context_cache[text] = embedding
-        return embedding
-        
-    def find_semantic_matches(self, word, context):
-        """Find semantically similar matches using sentence transformers."""
-        word_embedding = self.sentence_model.encode(word)
-        context_embedding = self.sentence_model.encode(context)
-        
-        candidates = []
-        for dict_word in self.dictionary:
-            dict_embedding = self.sentence_model.encode(dict_word)
-            word_similarity = np.dot(word_embedding, dict_embedding) / (
-                np.linalg.norm(word_embedding) * np.linalg.norm(dict_embedding)
-            )
-            context_similarity = np.dot(context_embedding, dict_embedding) / (
-                np.linalg.norm(context_embedding) * np.linalg.norm(dict_embedding)
-            )
-            combined_score = 0.7 * word_similarity + 0.3 * context_similarity
-            candidates.append((dict_word, combined_score))
-            
-        return sorted(candidates, key=lambda x: x[1], reverse=True)
-        
-    def analyze_patterns(self, text, window_size=3):
-        """Analyze text patterns for consistent translations."""
-        words = text.split()
-        patterns = {}
-        
-        for i in range(len(words)):
-            window = words[max(0, i-window_size):min(len(words), i+window_size+1)]
-            context = " ".join(window)
-            
-            # Get contextual understanding
-            context_embedding = self.get_contextual_embedding(context)
-            
-            # Check for known patterns
-            pattern_key = tuple(window)
-            if pattern_key in self.pattern_memory:
-                patterns[words[i]] = self.pattern_memory[pattern_key]
-                
+    @torch.no_grad()
+    def batch_encode_contexts(self, contexts: List[str]) -> torch.Tensor:
+        """Encode multiple contexts in a single batch."""
+        inputs = self.tokenizer(contexts, return_tensors="pt", padding=True, truncation=True)
+        inputs = {k: v.to(self.context_model.device) for k, v in inputs.items()}
+        outputs = self.context_model(**inputs, output_hidden_states=True)
+        return outputs.hidden_states[-1].mean(dim=1)
+    
+    @torch.no_grad()
+    def batch_semantic_similarity(self, words: List[str], contexts: List[str]) -> List[Tuple[str, float]]:
+        """Compute semantic similarity for multiple words and contexts in parallel."""
+        # Encode words and contexts
+        word_embeddings = self.sentence_model.encode(words, batch_size=self.batch_size, convert_to_numpy=True)
+        context_embeddings = self.sentence_model.encode(contexts, batch_size=self.batch_size, convert_to_numpy=True)
+        # Normalize embeddings
+        word_embeddings = word_embeddings / np.linalg.norm(word_embeddings, axis=1, keepdims=True)
+        context_embeddings = context_embeddings / np.linalg.norm(context_embeddings, axis=1, keepdims=True)
+        # Compute cosine similarities
+        word_similarities = np.dot(word_embeddings, self.dict_embeddings.T)
+        context_similarities = np.dot(context_embeddings, self.dict_embeddings.T)
+        # Combine scores
+        combined_scores = 0.7 * word_similarities + 0.3 * context_similarities
+        best_indices = np.argmax(combined_scores, axis=1)
+        best_scores = combined_scores[np.arange(len(best_indices)), best_indices]
+        return [(self.dict_words[idx], score) for idx, score in zip(best_indices, best_scores)]
+    
+    def analyze_patterns_batch(self, texts: List[str], window_size=3) -> Dict[str, Dict]:
+        """Analyze text patterns in batch."""
+        patterns = defaultdict(dict)
+        dataset = TextBatchDataset(texts, window_size)
+        dataloader = DataLoader(dataset, batch_size=self.batch_size, shuffle=False)
+        for batch_contexts, batch_words in dataloader:
+            context_embeddings = self.batch_encode_contexts(batch_contexts)
+            for context, word, embedding in zip(batch_contexts, batch_words, context_embeddings):
+                pattern_key = tuple(context.split())
+                if pattern_key in self.pattern_memory:
+                    patterns[word].update(self.pattern_memory[pattern_key])
         return patterns
-        
-    def preprocess_text(self, text, lang):
+    
+    def preprocess_text(self, text: str, lang: str) -> Tuple[str, Dict[str, str]]:
         """Enhanced preprocessing with context preservation."""
         text = text.lower()
         words = text.split()
-        
         if lang == "id":
             processed = [self.id_stemmer.stem(word) for word in words]
         elif lang == "en":
             processed = [self.en_stemmer.stem(word) for word in words]
         else:
             processed = words
-            
-        # Preserve original-to-processed mapping
         mapping = dict(zip(words, processed))
         return " ".join(processed), mapping
+    
+    def translate_text(self, text: str, source_lang: str, target_lang: str) -> str:
+        """Optimized text translation using batched processing."""
+        print(f"Translating from {source_lang} to {target_lang}...")
         
-    def find_closest_match(self, word, context=""):
-        """Enhanced closest match finding with context awareness."""
-        # First try exact dictionary match
-        if word in self.dictionary:
-            return word, 1.0
-            
-        # Try semantic matching
-        semantic_matches = self.find_semantic_matches(word, context)
-        if semantic_matches and semantic_matches[0][1] > 0.8:
-            return semantic_matches[0]
-            
-        # Fallback to Levenshtein distance
-        candidates = list(self.dictionary.keys())
-        distances = [(c, lev_distance(word, c)) for c in candidates]
-        closest = min(distances, key=lambda x: x[1])
-        max_len = max(len(word), len(closest[0]))
-        confidence = 1 - (closest[1] / max_len)
-        
-        return closest[0], confidence
-        
-    def translate_word(self, word, context=""):
-        """Enhanced word translation with context awareness."""
-        # Check pattern memory
-        patterns = self.analyze_patterns(context)
-        if word in patterns:
-            return patterns[word], 0.9
-            
-        # Try dictionary lookup
-        if word in self.dictionary:
-            return self.dictionary[word], 1.0
-            
-        # Try finding closest match
-        closest, confidence = self.find_closest_match(word, context)
-        if confidence > 0.6:
-            translation = self.dictionary.get(closest, word)
-            # Update pattern memory
-            self.pattern_memory[tuple(context.split())][word] = translation
-            return translation, confidence
-            
-        # Zero-shot classification as last resort
-        candidates = list(self.dictionary.keys())
-        result = self.zero_shot(
-            context,
-            candidate_labels=candidates,
-            hypothesis_template="This text contains the word {}."
-        )
-        
-        if result['scores'][0] > 0.7:
-            return self.dictionary[result['labels'][0]], result['scores'][0]
-            
-        return word, 0.0
-        
-    def translate_text(self, text, source_lang, target_lang):
-        """Enhanced text translation with context awareness."""
-        self.confidence = 1.0
-        
-        # Handle language pipeline
         if source_lang == "en" and target_lang == "dyk":
             text = self.en_id_translator(text, max_length=512)[0]["translation_text"]
         elif source_lang == "dyk" and target_lang == "en":
@@ -184,50 +214,53 @@ class EnhancedIndigenousTranslator:
             text = self.id_en_translator(text, max_length=512)[0]["translation_text"]
             return text
             
-        # Preprocess text
         processed_text, word_mapping = self.preprocess_text(text, source_lang)
         words = processed_text.split()
         
-        # Translate with context
-        translated = []
-        total_words = len(words)
-        matched_words = 0
+        # Create dataset and dataloader for batch processing
+        dataset = TextBatchDataset(words)
+        dataloader = DataLoader(dataset, batch_size=self.batch_size, shuffle=False)
         
-        for i, word in enumerate(words):
-            # Get context window
-            context_window = words[max(0, i-2):min(len(words), i+3)]
-            context = " ".join(context_window)
-            
-            # Translate word
-            trans, confidence = self.translate_word(word, context)
-            translated.append(trans)
-            self.confidence *= confidence
-            if confidence > 0:
-                matched_words += 1
-                
-        # Update statistics
+        translated_words = []
+        confidence_list = []
+        
+        print("Processing translation in batches...")
+        for batch_contexts, batch_words in tqdm(dataloader, desc="Translating"):
+            semantic_matches = self.batch_semantic_similarity(batch_words, batch_contexts)
+            for word, (match, confidence) in zip(batch_words, semantic_matches):
+                if confidence > 0.8:
+                    translation = self.dictionary.get(match, word)
+                    translated_words.append(translation)
+                    confidence_list.append(confidence)
+                else:
+                    translation = self.dictionary.get(word, word)
+                    translated_words.append(translation)
+                    confidence_list.append(1.0 if word in self.dictionary else 0.0)
+        
+        self.confidence = np.mean(confidence_list)
+        self.match_rate = len([c for c in confidence_list if c > 0]) / len(confidence_list)
+        
+        translation = " ".join(translated_words)
         self.translations.append((
             text,
-            " ".join(translated),
+            translation,
             self.confidence,
-            total_words,
-            len(translated)
+            len(words),
+            len(translated_words)
         ))
-        self.match_rate = matched_words / total_words if total_words > 0 else 0
         
-        return " ".join(translated)
-        
-    def create_report(self, filename):
+        print(f"Translation complete! Confidence: {self.confidence:.2%}")
+        return translation
+    
+    def create_report(self, filename: str):
         """Enhanced report creation with additional metrics."""
         doc = Document()
         doc.add_heading("Translation Report", 0)
         
-        # Calculate metrics
         avg_confidence = sum(conf for _, _, conf, _, _ in self.translations) / len(self.translations)
         total_words = sum(orig_count for _, _, _, orig_count, _ in self.translations)
         total_translations = sum(trans_count for _, _, _, _, trans_count in self.translations)
         
-        # Add header
         header = doc.sections[0].header
         header_paragraph = header.paragraphs[0] if header.paragraphs else header.add_paragraph()
         header_paragraph.text = (
@@ -236,15 +269,12 @@ class EnhancedIndigenousTranslator:
             f"Pattern Matches: {len(self.pattern_memory)}"
         )
         
-        # Add translations
         for original, translated, confidence, original_word_count, target_word_count in self.translations:
-            doc.add_paragraph(f"Original: {original}")
-            doc.add_paragraph(f"Translated: {translated}")
+            doc.add_paragraph(f"Original: {sanitize_text(original)}")
+            doc.add_paragraph(f"Translated: {sanitize_text(translated)}")
             doc.add_paragraph(f"Confidence: {confidence:.1%}")
-            doc.add_paragraph(f"Words: {original_word_count} → {target_word_count}")
             doc.add_paragraph("\n")
-            
-        # Add footer
+        
         footer = doc.sections[0].footer
         footer_paragraph = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
         footer_paragraph.text = (
@@ -255,27 +285,65 @@ class EnhancedIndigenousTranslator:
         
         doc.add_page_break()
         doc.save(filename)
+        print(f"Report saved to {filename}")
+
+def main():
+    try:
+        translator = OptimizedIndigenousTranslator("dictionary_alt.json")
+        
+        while True:
+            choice = input("\n\nEnter 'file' to load from file or 'text' to input manually: ")
+            
+            if choice.lower() == 'file':
+                file_path = input("Enter file path: ")
+                if os.path.exists(file_path):
+                    encoding = OptimizedIndigenousTranslator.detect_encoding(file_path)
+                    if not encoding:
+                        print("Encoding could not be detected. Trying fallback encoding 'latin-1'...")
+                        encoding = "latin-1"
+                    try:
+                        with open(file_path, "r", encoding=encoding) as file:
+                            text = file.read()
+                    except UnicodeDecodeError:
+                        print(f"Error decoding file with {encoding}. Trying fallback encoding 'latin-1'...")
+                        with open(file_path, "r", encoding="latin-1") as file:
+                            text = file.read()
+                else:
+                    print("File not found.")
+                    continue
+            else:
+                text = input("Enter text to translate: ")
+            
+            source_lang = input("Enter source language (id/en/dyk): ").lower()
+            target_lang = input("Enter target language (id/en/dyk): ").lower()
+            print("-" * 50)
+            print("\n")
+            
+            if source_lang not in ['id', 'en', 'dyk'] or target_lang not in ['id', 'en', 'dyk']:
+                print("Invalid language selection. Please try again.")
+                continue
+            
+            translation = translator.translate_text(text, source_lang, target_lang)
+            translator.create_report("translation_report.docx")
+            
+            print("\nTranslation Results:")
+            print("-" * 50)
+            print(f"Translation: {translation}")
+            print(f"Confidence: {translator.confidence:.1%}")
+            print(f"Match Rate: {translator.match_rate:.1%}")
+            print("-" * 50)
+            
+            continue_translation = input("\nWould you like to translate another text? (y/n): ")
+            if continue_translation.lower() != 'y':
+                break
+                
+    except KeyboardInterrupt:
+        print("\nTranslation process interrupted.")
+    finally:
+        print("\nCleaning up resources...")
+        torch.cuda.empty_cache()
+        gc.collect()
+        print("Goodbye!")
 
 if __name__ == "__main__":
-    translator = EnhancedIndigenousTranslator("dictionary_alt.json")
-    
-    choice = input("Enter 'file' to load from file or 'text' to input manually: ")
-    if choice == 'file':
-        file_path = input("Enter file path: ")
-        if os.path.exists(file_path):
-            with open(file_path, "r", encoding="utf-8") as file:
-                text = file.read()
-        else:
-            print("File not found.")
-            exit()
-    else:
-        text = input("Enter text to translate: ")
-    
-    source_lang = input("Enter source language (id/en/dyk): ")
-    target_lang = input("Enter target language (id/en/dyk): ")
-    
-    translation = translator.translate_text(text, source_lang, target_lang)
-    translator.create_report("translation_report.docx")
-    
-    print(f"Translation: {translation}")
-    print(f"Confidence: {translator.confidence:.1%}")
+    main()
