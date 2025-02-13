@@ -1,11 +1,11 @@
 # 🌍 Indigenous Language Translator Engine (ILTE) 🌿
-
+---
 ```
 Release:
 - v2.1.0-Beta.2 ALT
 - v2.1.1-Alpha.2 ADV
 ```
-
+---
 ```
  ██╗  ██╗     ████████╗ ███████╗
  ██║  ██║     ╚══██╔══╝ ██╔════╝
@@ -147,9 +147,8 @@ Choose the version that best suits your needs and contribute to **indigenous lan
 ---
 🔗 **Developed for Indigenous Language Preservation** 🌍💡  
 📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited.  
-
+---
 📌 **Note from XI TJKT 2 Development Team** 
 - 💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
-
-
+---
 __🏆 Keep It Going 🤝__
