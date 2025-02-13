@@ -167,16 +167,14 @@ The **DOCX Report** includes:
 ## 🏆 Conclusion
 Choose the version that best suits your needs and contribute to **indigenous language preservation**. 🚀  
 
----
-🔗 **Developed for Indigenous Language Preservation** 🌍💡  
-📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited. 
+#### 🔗 **Developed for Indigenous Language Preservation** 🌍💡  
+#### 📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited. 
 
 ---
-
-## 🌱 Preservation Initiative
+### 🌱 Preservation Initiative
 Choose your suitable version and join our mission to protect linguistic heritage through ethical technology. 📜✨
 
-## 🤝 Contribute | 📧 Contact Team | 🌐 Cultural Partners
-
+### 🤝 Contribute | 📧 Contact Team | 🌐 Cultural Partners
 ---
+
 __🏆 Keep It Going 🤝__
