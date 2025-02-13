@@ -102,8 +102,8 @@ python engine_ADV.py
 - Format:
 ```json
 {
-    "makan": "ngakan",
-    "minum": "nyuip"
+  "apa"   : "inu",
+  "kemana": "kenpi"
 }
 ```
 
