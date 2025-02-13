@@ -95,20 +95,20 @@ The **Indigenous Language Translator Engine (ILTE)** offers **two distinct versi
 - ✔️ Use **ILTE-ALT** for lightweight, dictionary-based translations.
 - ✔️ Use **ILTE-ADV** for AI-powered, context-aware translations.
 
+---
+
 # 🔮 Roadmap
-ILTE-ALT
-Performance optimization
+## ILTE-ALT
+- Performance optimization
+- Basic semantic pattern matching
+- Multi-thread processing
 
-Basic semantic pattern matching
+## ILTE-ADV
+- Enhanced AI classification
+- Neural network improvements
+- Cross-language transfer learning
 
-Multi-thread processing
-
-# ILTE-ADV
-Enhanced AI classification
-
-Neural network improvements
-
-Cross-language transfer learning
+---
 
 ### **Running ILTE-ALT (Simple Mode)**
 ```sh
@@ -119,6 +119,8 @@ python engine_ALT.py
 ```sh
 python engine_ADV.py
 ```
+
+---
 
 ### **Selecting Input Type**
 - 👉 **Manual Input**: Type text directly into the CLI.
