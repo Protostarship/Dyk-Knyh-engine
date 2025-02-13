@@ -173,10 +173,10 @@ Choose the version that best suits your needs and contribute to **indigenous lan
 
 ---
 
-# 🌱 Preservation Initiative
+## 🌱 Preservation Initiative
 Choose your suitable version and join our mission to protect linguistic heritage through ethical technology. 📜✨
 
-# 🤝 Contribute | 📧 Contact Team | 🌐 Cultural Partners
+## 🤝 Contribute | 📧 Contact Team | 🌐 Cultural Partners
 
 ---
 __🏆 Keep It Going 🤝__
