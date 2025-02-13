@@ -1,4 +1,6 @@
-# 🌍 Indigenous Language Translator Engine (ILTE) 🌿
+# 🌍 Indigenous Language Translator Engine (ILTE) 🌿  
+### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
+
 ---
 ```
 Release:
@@ -89,6 +91,21 @@ The **Indigenous Language Translator Engine (ILTE)** offers **two distinct versi
 #### ✔️ Use **ILTE-ALT** for lightweight, dictionary-based translations.
 #### ✔️ Use **ILTE-ADV** for AI-powered, context-aware translations.
 
+# 🔮 Roadmap
+ILTE-ALT
+Performance optimization
+
+Basic semantic pattern matching
+
+Multi-thread processing
+
+# ILTE-ADV
+Enhanced AI classification
+
+Neural network improvements
+
+Cross-language transfer learning
+
 ### **Running ILTE-ALT (Simple Mode)**
 ```sh
 python engine_ALT.py
@@ -148,7 +165,11 @@ Choose the version that best suits your needs and contribute to **indigenous lan
 🔗 **Developed for Indigenous Language Preservation** 🌍💡  
 📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited.  
 ---
-📌 **Note from XI TJKT 2 Development Team** 
+# 🌱 Preservation Initiative
+Choose your suitable version and join our mission to protect linguistic heritage through ethical technology. 📜✨
+
+# 🤝 Contribute | 📧 Contact Team | 🌐 Cultural Partners
+
 - 💡 **Any use of our translation engine for one's own gain is strictly prohibited!**
 ---
 __🏆 Keep It Going 🤝__
