@@ -1,7 +1,7 @@
 # 🌍 Indigenous Language Translator Engine (ILTE) 🌿
 
 ---
-##### 📌 Developed by XI TJKT 2 2024/2025 | ❗ Any commercial use or unauthorized exploitation is prohibited
+##### 📌 Developed by XI TJKT 2 | 2024/2025 | ❗ Any commercial use or unauthorized exploitation is prohibited
 ---
 
 ```
