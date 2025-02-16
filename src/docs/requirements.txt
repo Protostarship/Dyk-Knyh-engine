@@ -1,0 +1,32 @@
+# Core ML and Deep Learning
+torch>=2.0.0                # PyTorch for deep learning models
+transformers>=4.30.0        # Hugging Face Transformers for NLP tasks
+sentence-transformers>=2.2.2 # Sentence embeddings for similarity matching
+bitsandbytes>=0.45.2        # Optimized quantization for transformer models
+
+# NLP Libraries
+nltk>=3.8.1                 # Natural Language Toolkit for text processing
+Sastrawi>=1.0.1             # Indonesian language stemming
+python-Levenshtein>=0.21.0  # Levenshtein distance for fuzzy matching
+malaya>=4.9.1               # Bahasa NLP toolkit for semantic matching
+fasttext-wheel>=0.9.2       # FastText embeddings for out-of-vocabulary handling
+
+# Data Processing
+numpy>=1.24.0               # Numerical computations
+chardet>=5.0.0              # Encoding detection for input files
+psutil>=5.9.4               # System resource monitoring
+
+# Document Handling
+python-docx>=0.8.11         # DOCX file handling for reports
+
+# Performance and Progress
+tqdm>=4.65.0                # Progress bars for processing
+
+# Translation Model Dependencies
+sacremoses>=0.0.53          # Preprocessing for tokenization
+sentencepiece>=0.1.99       # Tokenization model
+protobuf>=3.20.0            # Model serialization format
+
+# Parallel Processing and Optimization
+concurrent-log-handler>=0.9.20  # Thread-safe logging
+threadpoolctl>=3.1.0            # Controls parallelization of native libraries
