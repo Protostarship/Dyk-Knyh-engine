@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <style>
+    @keyframes fadeInOut1 {
+      0%, 100% { opacity: 0.2; fill: #ffffff; }
+      50% { opacity: 1; fill: #00FF7F; }
+    }
+    @keyframes fadeInOut2 {
+      0%, 100% { opacity: 0.2; fill: #ffffff; }
+      50% { opacity: 1; fill: #32CD32; }
+    }
+    @keyframes fadeInOut3 {
+      0%, 100% { opacity: 0.2; fill: #ffffff; }
+      50% { opacity: 1; fill: #98FB98; }
+    }
+    @keyframes fadeInOut4 {
+      0%, 100% { opacity: 0.2; fill: #ffffff; }
+      50% { opacity: 1; fill: #3CB371; }
+    }
+    .tile1 { animation: fadeInOut1 3s ease-in-out infinite; }
+    .tile2 { animation: fadeInOut2 3.5s ease-in-out infinite; }
+    .tile3 { animation: fadeInOut3 3.2s ease-in-out infinite; }
+    .tile4 { animation: fadeInOut4 3.8s ease-in-out infinite; }
+  </style>
+  
+  <rect width="1280" height="640" fill="#ffffff"/>
+  
+  <g>
+    <!-- Row 1 -->
+    <rect class="tile1" x="0" y="0" width="128" height="64" style="animation-delay: 0.7s"/>
+    <rect class="tile2" x="128" y="0" width="128" height="64" style="animation-delay: 2.1s"/>
+    <rect class="tile3" x="256" y="0" width="128" height="64" style="animation-delay: 1.3s"/>
+    <rect class="tile4" x="384" y="0" width="128" height="64" style="animation-delay: 3.2s"/>
+    <rect class="tile1" x="512" y="0" width="128" height="64" style="animation-delay: 0.9s"/>
+    <rect class="tile2" x="640" y="0" width="128" height="64" style="animation-delay: 2.8s"/>
+    <rect class="tile3" x="768" y="0" width="128" height="64" style="animation-delay: 1.6s"/>
+    <rect class="tile4" x="896" y="0" width="128" height="64" style="animation-delay: 0.4s"/>
+    <rect class="tile1" x="1024" y="0" width="128" height="64" style="animation-delay: 2.3s"/>
+    <rect class="tile2" x="1152" y="0" width="128" height="64" style="animation-delay: 1.1s"/>
+
+    <!-- Row 2 -->
+    <rect class="tile4" x="0" y="64" width="128" height="64" style="animation-delay: 1.9s"/>
+    <rect class="tile3" x="128" y="64" width="128" height="64" style="animation-delay: 0.5s"/>
+    <rect class="tile2" x="256" y="64" width="128" height="64" style="animation-delay: 2.7s"/>
+    <rect class="tile1" x="384" y="64" width="128" height="64" style="animation-delay: 1.4s"/>
+    <rect class="tile4" x="512" y="64" width="128" height="64" style="animation-delay: 3.1s"/>
+    <rect class="tile3" x="640" y="64" width="128" height="64" style="animation-delay: 0.8s"/>
+    <rect class="tile2" x="768" y="64" width="128" height="64" style="animation-delay: 2.4s"/>
+    <rect class="tile1" x="896" y="64" width="128" height="64" style="animation-delay: 1.7s"/>
+    <rect class="tile4" x="1024" y="64" width="128" height="64" style="animation-delay: 0.3s"/>
+    <rect class="tile3" x="1152" y="64" width="128" height="64" style="animation-delay: 2.9s"/>
+
+    <!-- Row 3 -->
+    <rect class="tile1" x="0" y="128" width="128" height="64" style="animation-delay: 2.2s"/>
+    <rect class="tile2" x="128" y="128" width="128" height="64" style="animation-delay: 1.5s"/>
+    <rect class="tile3" x="256" y="128" width="128" height="64" style="animation-delay: 0.6s"/>
+    <rect class="tile4" x="384" y="128" width="128" height="64" style="animation-delay: 2.8s"/>
+    <rect class="tile1" x="512" y="128" width="128" height="64" style="animation-delay: 1.2s"/>
+    <rect class="tile2" x="640" y="128" width="128" height="64" style="animation-delay: 3.3s"/>
+    <rect class="tile3" x="768" y="128" width="128" height="64" style="animation-delay: 0.7s"/>
+    <rect class="tile4" x="896" y="128" width="128" height="64" style="animation-delay: 2.5s"/>
+    <rect class="tile1" x="1024" y="128" width="128" height="64" style="animation-delay: 1.8s"/>
+    <rect class="tile2" x="1152" y="128" width="128" height="64" style="animation-delay: 0.4s"/>
+
+    <!-- Row 4 -->
+    <rect class="tile4" x="0" y="192" width="128" height="64" style="animation-delay: 1.3s"/>
+    <rect class="tile3" x="128" y="192" width="128" height="64" style="animation-delay: 2.6s"/>
+    <rect class="tile2" x="256" y="192" width="128" height="64" style="animation-delay: 0.8s"/>
+    <rect class="tile1" x="384" y="192" width="128" height="64" style="animation-delay: 3.1s"/>
+    <rect class="tile4" x="512" y="192" width="128" height="64" style="animation-delay: 1.6s"/>
+    <rect class="tile3" x="640" y="192" width="128" height="64" style="animation-delay: 0.3s"/>
+    <rect class="tile2" x="768" y="192" width="128" height="64" style="animation-delay: 2.9s"/>
+    <rect class="tile1" x="896" y="192" width="128" height="64" style="animation-delay: 1.4s"/>
+    <rect class="tile4" x="1024" y="192" width="128" height="64" style="animation-delay: 2.7s"/>
+    <rect class="tile3" x="1152" y="192" width="128" height="64" style="animation-delay: 0.5s"/>
+
+    <!-- Row 5 -->
+    <rect class="tile1" x="0" y="256" width="128" height="64" style="animation-delay: 1.8s"/>
+    <rect class="tile2" x="128" y="256" width="128" height="64" style="animation-delay: 0.4s"/>
+    <rect class="tile3" x="256" y="256" width="128" height="64" style="animation-delay: 2.5s"/>
+    <rect class="tile4" x="384" y="256" width="128" height="64" style="animation-delay: 1.2s"/>
+    <rect class="tile1" x="512" y="256" width="128" height="64" style="animation-delay: 2.9s"/>
+    <rect class="tile2" x="640" y="256" width="128" height="64" style="animation-delay: 0.6s"/>
+    <rect class="tile3" x="768" y="256" width="128" height="64" style="animation-delay: 2.2s"/>
+    <rect class="tile4" x="896" y="256" width="128" height="64" style="animation-delay: 1.5s"/>
+    <rect class="tile1" x="1024" y="256" width="128" height="64" style="animation-delay: 0.1s"/>
+    <rect class="tile2" x="1152" y="256" width="128" height="64" style="animation-delay: 2.7s"/>
+
+    <!-- Row 6 -->
+    <rect class="tile4" x="0" y="320" width="128" height="64" style="animation-delay: 2.1s"/>
+    <rect class="tile3" x="128" y="320" width="128" height="64" style="animation-delay: 0.7s"/>
+    <rect class="tile2" x="256" y="320" width="128" height="64" style="animation-delay: 2.8s"/>
+    <rect class="tile1" x="384" y="320" width="128" height="64" style="animation-delay: 1.5s"/>
+    <rect class="tile4" x="512" y="320" width="128" height="64" style="animation-delay: 0.2s"/>
+    <rect class="tile3" x="640" y="320" width="128" height="64" style="animation-delay: 2.4s"/>
+    <rect class="tile2" x="768" y="320" width="128" height="64" style="animation-delay: 1.1s"/>
+    <rect class="tile1" x="896" y="320" width="128" height="64" style="animation-delay: 2.6s"/>
+    <rect class="tile4" x="1024" y="320" width="128" height="64" style="animation-delay: 0.8s"/>
+    <rect class="tile3" x="1152" y="320" width="128" height="64" style="animation-delay: 2.3s"/>
+
+    <!-- Row 7 -->
+    <rect class="tile1" x="0" y="384" width="128" height="64" style="animation-delay: 1.6s"/>
+    <rect class="tile2" x="128" y="384" width="128" height="64" style="animation-delay: 0.3s"/>
+    <rect class="tile3" x="256" y="384" width="128" height="64" style="animation-delay: 2.4s"/>
+    <rect class="tile4" x="384" y="384" width="128" height="64" style="animation-delay: 1.1s"/>
+    <rect class="tile1" x="512" y="384" width="128" height="64" style="animation-delay: 2.8s"/>
+    <rect class="tile2" x="640" y="384" width="128" height="64" style="animation-delay: 0.5s"/>
+    <rect class="tile3" x="768" y="384" width="128" height="64" style="animation-delay: 2.1s"/>
+    <rect class="tile4" x="896" y="384" width="128" height="64" style="animation-delay: 1.4s"/>
+    <rect class="tile1" x="1024" y="384" width="128" height="64" style="animation-delay: 0.1s"/>
+    <rect class="tile2" x="1152" y="384" width="128" height="64" style="animation-delay: 2.6s"/>
+
+    <!-- Row 8 -->
+    <rect class="tile4" x="0" y="448" width="128" height="64" style="animation-delay: 2.0s"/>
+    <rect class="tile3" x="128" y="448" width="128" height="64" style="animation-delay: 0.6s"/>
+    <rect class="tile2" x="256" y="448" width="128" height="64" style="animation-delay: 2.7s"/>
+    <rect class="tile1" x="384" y="448" width="128" height="64" style="animation-delay: 1.4s"/>
+    <rect class="tile4" x="512" y="448" width="128" height="64" style="animation-delay: 0.1s"/>
+    <rect class="tile3" x="640" y="448" width="128" height="64" style="animation-delay: 2.3s"/>
+    <rect class="tile2" x="768" y="448" width="128" height="64" style="animation-delay: 1.0s"/>
+    <rect class="tile1" x="896" y="448" width="128" height="64" style="animation-delay: 2.5s"/>
+    <rect class="tile4" x="1024" y="448" width="128" height="64" style="animation-delay: 0.7s"/>
+    <rect class="tile3" x="1152" y="448" width="128" height="64" style="animation-delay: 2.2s"/>
+
+    <!-- Row 9 -->
+    <rect class="tile1" x="0" y="512" width="128" height="64" style="animation-delay: 1.7s"/>
+    <rect class="tile2" x="128" y="512" width="128" height="64" style="animation-delay: 0.4s"/>
+    <rect class="tile3" x="256" y="512" width="128" height="64" style="animation-delay: 2.5s"/>
+    <rect class="tile4" x="384" y="512" width="128" height="64" style="animation-delay: 1.2s"/>
+    <rect class="tile1" x="512" y="512" width="128" height="64" style="animation-delay: 2.9s"/>
+    <rect class="tile2" x="640" y="512" width="128" height="64" style="animation-delay: 0.6s"/>
+    <rect class="tile3" x="768" y="512" width="128" height="64" style="animation-delay: 2.2s"/>
+    <rect class="tile4" x="896" y="512" width="128" height="64" style="animation-delay: 1.5s"/>
+    <rect class="tile1" x="1024" y="512" width="128" height="64" style="animation-delay: 0.2s"/>
+    <rect class="tile2" x="1152" y="512" width="128" height="64" style="animation-delay: 2.8s"/>
+
+    <!-- Row 10 -->
+    <rect class="tile4" x="0" y="576" width="128" height="64" style="animation-delay: 1.9s"/>
+    <rect class="tile3" x="128" y="576" width="128" height="64" style="animation-delay: 0.5s"/>
+    <rect class="tile2" x="256" y="576" width="128" height="64" style="animation-delay: 2.6s"/>
+    <rect class="tile1" x="384" y="576" width="128" height="64" style="animation-delay: 1.3s"/>
+    <rect class="tile4" x="512" y="576" width="128" height="64" style="animation-delay: 0.0s"/>
+    <rect class="tile3" x="640" y="576" width="128" height="64" style="animation-delay: 2.2s"/>
+    <rect class="tile2" x="768" y="576" width="128" height="64" style="animation-delay: 0.9s"/>
+    <rect class="tile1" x="896" y="576" width="128" height="64" style="animation-delay: 2.4s"/>
+    <rect class="tile4" x="1024" y="576" width="128" height="64" style="animation-delay: 0.6s"/>
+    <rect class="tile3" x="1152" y="576" width="128" height="64" style="animation-delay: 2.1s"/>
+  </g>
+</svg>
