@@ -8,7 +8,7 @@ This document provides the **minimum and recommended system requirements** for r
 ## 🏆 **General Requirements**
 | Component   | Minimum Requirement | Recommended Requirement |
 |------------|---------------------|-------------------------|
-| **OS** | Windows 10 / Linux Ubuntu 20.04+ / macOS 12+ | Windows 11 / Linux Ubuntu 22.04 / macOS 13+ |
+| **OS** | Windows 10 / Linux Ubuntu 20.04+ | Windows 11 / Linux Ubuntu 22.04 |
 | **Python Version** | 3.8+ | 3.10+ |
 | **Storage** | 2GB Free Space | 5GB SSD/NVMe |
 | **Network** | Stable internet for model downloads | High-speed internet (Fiber) |
