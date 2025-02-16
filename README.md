@@ -6,13 +6,12 @@
 ##### 📌 Developed by XI TJKT 2 | 2024/2025 | ❗ Any commercial use or unauthorized exploitation is prohibited
 ---
 
-```
 Release:
-- [v2.1.0-Beta.2 ALT] (https://github.com/Protostarship/Dyk-Knyh-engine/releases/tag/v2.1.0)
-- [v2.1.1-Alpha.2 ADV] (https://github.com/Protostarship/Dyk-Knyh-engine/releases/tag/v2.1.0)
-- [v2.1.2-Beta.3 ZS]
+- [v2.1.0-Beta.2 ALT](https://github.com/Protostarship/Dyk-Knyh-engine/releases/tag/v2.1.0)
+- [v2.1.1-Alpha.2 ADV](https://github.com/Protostarship/Dyk-Knyh-engine/releases/tag/v2.1.0)
+- [v2.1.2-Beta.3 ZS](https://github.com/Protostarship/Dyk-Knyh-engine/releases/tag/v2.1.2-Beta.3)
 - [v3.0.0-Alpha.3 ATI]
-```
+  
 ---
 ```
  ██╗  ██╗     ████████╗ ███████╗
