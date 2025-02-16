@@ -1,7 +1,7 @@
 # 🌍 Indigenous Language Translator Engine (ILTE) 🌿
 
 ---
-##### 📌 Developed by XI TJKT 2 | 2024/2025 | ❗ Any commercial use or unauthorized exploitation is prohibited
+##### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
 ---
 
 ```
@@ -9,6 +9,7 @@ Release:
 - v2.1.0-Beta.2 ALT
 - v2.1.1-Alpha.2 ADV
 - v2.1.2-Beta.3 ZS
+- v3.0.0-Alpha.3 ATI
 ```
 ---
 ```
@@ -23,11 +24,12 @@ Release:
 ```
 
 ## 📌 Overview
-The **Indigenous Language Translator Engine (ILTE)** now offers **three distinct versions**, each tailored to different translation needs:
+The **Indigenous Language Translator Engine (ILTE)** now offers **four distinct versions**, each tailored to different translation needs:
 
 - **🌱 ILTE-ALT (Optimized for Speed)** – A lightweight, dictionary-based translator optimized for **fast, low-resource translations**.
 - **🧠 ILTE-ZS (Hybrid, Multi-Processing)** – Combines **dictionary-based rules, RBMT, FST, semantic matching, and zero-shot translation** while efficiently handling **large text files**.
 - **🧐 ILTE-ADV (AI-Powered, Context-Aware)** – An advanced, AI-driven translation engine that integrates **context awareness, semantic similarity, and zero-shot learning**.
+- **🔮 ILTE-ATI v3-Alpha.3 (Advanced Attention & Iterative Processing)** – The most sophisticated version with **hierarchical normalization, iterative refinement, attention-based translation, and multi-level candidate selection**.
 
 ## ✨ Key Features
 ### **ILTE-ALT - Simple, Fast & Efficient**
@@ -46,11 +48,19 @@ The **Indigenous Language Translator Engine (ILTE)** now offers **three distinct
 - ⏳ **Faster Preprocessing, No Unnecessary Computation**.
 
 ### **ILTE-ADV - AI-Powered, Context-Aware & Smarter**
-- 🧐 **Contextual Translation using IndoBERT & Sentence Transformers**.
+- 🧠 **Contextual Translation using IndoBERT & Sentence Transformers**.
 - 🔍 **Zero-Shot Learning for Handling Unknown Words**.
 - 📚 **Pattern-Based Learning & Semantic Matching**.
 - 🛠️ **Enhanced Translation Confidence Metrics**.
 - ⚡ **Leverages GPU Acceleration for Faster Processing**.
+
+### **ILTE-ATI - Attention-Based, Iterative & Highly Adaptive**
+- ✨ **Hierarchical Normalization for Better Preprocessing**.
+- 🔄 **Iterative Translation for Context Awareness**.
+- 📚 **Attention-Based Translation for Multi-Level Candidate Generation**.
+- ⚖️ **Refined Confidence Scoring & Adaptive Refinement**.
+- ✅ **Full Formatting Preservation in DOCX Reports**.
+- 🚀 **Optimized for Dynamic, Multi-Stage Translation Processes**.
 
 ## ⚛ Models Used in Each Version
 
@@ -77,20 +87,28 @@ The **Indigenous Language Translator Engine (ILTE)** now offers **three distinct
 | **Zero-Shot Classification** | `typeform/distilbert-base-uncased-mnli` |
 | **Translation (ID-EN, EN-ID)** | `Helsinki-NLP/opus-mt-id-en`, `Helsinki-NLP/opus-mt-en-id` |
 
-## 📊 Comparison Table
-| Feature | ILTE-ALT | ILTE-ZS | ILTE-ADV |
-|---------|---------|---------|---------|
-| **Translation Approach** | Dictionary + Levenshtein | Dictionary + RBMT + FST + Semantic + Zero-Shot | Dictionary + Semantic + Context-Based AI |
-| **Processing Speed** | Fast | Moderate (Batch Multi-Processing) | Slower (Context-Aware AI) |
-| **Handling Large Files** | Struggles | 🔄 Efficient Chunking & Batch Processing | Slower |
-| **Memory Usage** | Low | Moderate | High |
-| **Context Awareness** | None | Partial (RBMT & FST) | ✅ Strong (BERT + Semantic Matching) |
-| **Idiomatic Expressions** | Limited | Rule-Based (RBMT) | AI-Based |
-| **Parallelization** | Minimal | ✅ Thread + Process Pool | DataLoader-Based |
-| **Zero-Shot Capability** | No | Yes | Yes |
-| **Best Use Case** | Fast, simple translation | Large file handling, scalable processing | High-accuracy, AI-based translation |
+### **🔮 ILTE-ATI v3-Alpha.3 (Attention-Based & Iterative Processing)**
+| Feature | Model Used |
+|---------|-----------|
+| **Hierarchical Normalization** | Regex + Dynamic Stemming |
+| **Contextual Translation** | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` |
+| **Iterative Processing** | Multi-Level Candidate Refinement |
+| **Translation (ID-DYK, DYK-ID)** | Enhanced Dictionary Lookup + Semantic Matching |
 
-## 🗂 How to Use
+## 📊 Comparison Table
+| Feature | ILTE-ALT | ILTE-ZS | ILTE-ADV | ILTE-ATI v3-Alpha.3 |
+|---------|---------|---------|---------|---------------------|
+| **Translation Approach** | Dictionary | Hybrid | AI-Based | Attention-Based + Iterative |
+| **Processing Speed** | Fast | Moderate | Slower | Balanced |
+| **Handling Large Files** | Struggles | Efficient Chunking | Slower | Optimized Processing |
+| **Memory Usage** | Low | Moderate | High | Optimized |
+| **Context Awareness** | None | Partial | Strong | 🔮 Very Strong |
+| **Idiomatic Expressions** | Limited | Rule-Based | AI-Based | AI + Attention |
+| **Parallelization** | Minimal | Yes | DataLoader | Thread + Process Pool |
+| **Zero-Shot Capability** | No | Yes | Yes | Yes |
+| **Best Use Case** | Fast translation | Large text processing | Context-Aware | High-Accuracy, AI-Powered |
+
+## 📚 How to Use
 ### **Running ILTE-ALT (Simple Mode)**
 ```sh
 python engine_ALT.py
@@ -103,6 +121,10 @@ python engine_ZS.py
 ```sh
 python engine_ADV.py
 ```
+### **Running ILTE-ATI (Advanced Iterative Attention Engine)**
+```sh
+python engine_ATI.py
+```
 
 ---
 ## 🎯 Conclusion
@@ -110,6 +132,7 @@ Choose the version that best suits your needs and contribute to **indigenous lan
 - ✅ **ALT:** For lightweight, dictionary-based translations.
 - ✅ **ZS:** For handling large files efficiently with hybrid translation techniques.
 - ✅ **ADV:** For AI-powered, context-aware translations.
+- ✅ **ATI** For advanced attention towards content and context.
 
 #### 🔗 **Developed for Indigenous Language Preservation** 🌍💡  
 #### 📚 **Licensed under GPL v3** – Any commercial use is strictly prohibited.
