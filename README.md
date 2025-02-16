@@ -96,7 +96,7 @@ The **Indigenous Language Translator Engine (ILTE)** now offers **four distinct 
 | **Translation (ID-DYK, DYK-ID)** | Enhanced Dictionary Lookup + Semantic Matching |
 
 ## 📊 Comparison Table
-| Feature | ILTE-ALT | ILTE-ZS | ILTE-ADV | ILTE-ATI v3-Alpha.3 |
+| Feature | ILTE-ALT | ILTE-ZS | ILTE-ADV | ILTE-ATI |
 |---------|---------|---------|---------|---------------------|
 | **Translation Approach** | Dictionary | Hybrid | AI-Based | Attention-Based + Iterative |
 | **Processing Speed** | Fast | Moderate | Slower | Balanced |
