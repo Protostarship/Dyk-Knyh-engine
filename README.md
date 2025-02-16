@@ -29,7 +29,7 @@ The **Indigenous Language Translator Engine (ILTE)** now offers **four distinct 
 - **🌱 ILTE-ALT (Optimized for Speed)** – A lightweight, dictionary-based translator optimized for **fast, low-resource translations**.
 - **🧠 ILTE-ZS (Hybrid, Multi-Processing)** – Combines **dictionary-based rules, RBMT, FST, semantic matching, and zero-shot translation** while efficiently handling **large text files**.
 - **🧐 ILTE-ADV (AI-Powered, Context-Aware)** – An advanced, AI-driven translation engine that integrates **context awareness, semantic similarity, and zero-shot learning**.
-- **🔮 ILTE-ATI v3-Alpha.3 (Advanced Attention & Iterative Processing)** – The most sophisticated version with **hierarchical normalization, iterative refinement, attention-based translation, and multi-level candidate selection**.
+- **🔮 ILTE-ATI (Advanced Attention & Iterative Processing)** – The most sophisticated version with **hierarchical normalization, iterative refinement, attention-based translation, and multi-level candidate selection**.
 
 ## ✨ Key Features
 ### **ILTE-ALT - Simple, Fast & Efficient**
