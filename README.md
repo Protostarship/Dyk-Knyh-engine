@@ -3,7 +3,7 @@
     <img src="https://github.com/Protostarship/Dyk-Knyh-engine/blob/main/bg.jpg" style="width: 100%; height: 192px; object-fit: cover;" alt="Profile Banner">
 </div>
 
-##### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
+##### 📌 Developed by XI TJKT 2 | 2024/2025 | ❗ Any commercial use or unauthorized exploitation is prohibited
 ---
 
 ```
