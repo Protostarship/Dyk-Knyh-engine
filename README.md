@@ -1,7 +1,7 @@
 # 🌍 Indigenous Language Translator Engine (ILTE) 🌿
-<p align="center">
-    <img src="https://github.com/Protostarship/Dyk-Knyh-engine/blob/main/bg.jpg" width="100%" height="auto" style="object-fit: contain;" alt="Banner">
-</p>
+<div align="center">
+    <img src="https://github.com/Protostarship/Dyk-Knyh-engine/blob/main/bg.jpg" style="width: 100%; height: 192px; object-fit: cover;" alt="Profile Banner">
+</div>
 ---
 ##### 📌 Developed by XI TJKT 2 | ❗ Any commercial use or unauthorized exploitation is prohibited
 ---
