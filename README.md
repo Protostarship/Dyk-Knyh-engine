@@ -89,7 +89,7 @@ The **Indigenous Language Translator Engine (ILTE)** now offers **four distinct 
 | **Zero-Shot Classification** | `typeform/distilbert-base-uncased-mnli` |
 | **Translation (ID-EN, EN-ID)** | `Helsinki-NLP/opus-mt-id-en`, `Helsinki-NLP/opus-mt-en-id` |
 
-### **🔮 ILTE-ATI v3-Alpha.3 (Attention-Based & Iterative Processing)**
+### **🔮 ILTE-ATI (Attention-Based & Iterative Processing)**
 | Feature | Model Used |
 |---------|-----------|
 | **Hierarchical Normalization** | Regex + Dynamic Stemming |
